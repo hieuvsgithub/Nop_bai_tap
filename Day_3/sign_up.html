@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="day_3.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Try a free sample</h1>
+      <p>
+        Sign up to get a coupon you can redeem at your nearest Dancing Goat
+        <br />
+        cafe for a sample of the Colombia Carlos Imbachi coffee. We'll also make
+        <br />
+        sure you don't miss out on news introducing the new coffees that we add
+        <br />
+        to our store regularly
+      </p>
+    </main>
+    <form action="" class="sign-in">
+      <div class="left">
+        <label for="First name">First name</label> <br />
+        <input
+          class="input-left"
+          type="text"
+          name="First name"
+          id="First name"
+          placeholder="John"
+        />
+
+        <label for="Email address">Email address</label><br />
+        <input
+          class="input-left"
+          type="email"
+          name="Email address"
+          id="Email address"
+          placeholder="john@example.com"
+          required
+        />
+
+        <label for="City">City</label><br />
+        <input
+          class="input-left"
+          type="text"
+          name="City"
+          id="City"
+          placeholder="London"
+        />
+
+        <label for="ZIP code">ZIP code </label><br />
+        <input
+          class="input-left"
+          type="text"
+          name="ZIP code"
+          id="ZIP code"
+          placeholder="EC2Y8DS"
+        />
+      </div>
+      <div class="Right">
+        <label for="Last name">Last name</label><br />
+        <input
+          class="input-Right"
+          type="text"
+          name="Last name"
+          id="Last name"
+          placeholder="Smith"
+        />
+
+        <label for=" Address">Address</label><br />
+        <input
+          class="input-Right"
+          type="text"
+          name="Address"
+          id="Address"
+          placeholder="Silk St"
+        />
+
+        <label for="State">State <span>(optional)</span></label
+        ><br />
+        <input class="input-Right" type="text" name="State" id="State" />
+
+        <label for="Country">Country</label><br />
+        <select
+          class="input-Right"
+          name="Country"
+          id="Country"
+          aria-placeholder="united Kingdom"
+        >
+          <option value="0">United Kingdom</option>
+          <option value="1">Việt Nam</option>
+          <option value="2">Thái Lan</option>
+          <option value="3">Lào</option>
+        </select>
+      </div>
+      <!-- <button>SEND ME FREE COFFEE</button> -->
+      <input class="form__btn" type="button" value="SEND ME FREE COFFEE" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+span {
+    opacity: 0.4;
+}
+.sign-in {
+    width: 600px;
+}
+.left.input-left,
+.Right.input-Right {
+    width: 300px;
+}
