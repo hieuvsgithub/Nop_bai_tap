@@ -1,0 +1,22 @@
+footer {
+    width: 90%;
+    height: 60%;
+    background-color: rgb(54, 72, 91);
+    border: auto;
+    border-color: black;
+}
+span {
+    color:chocolate;
+}
+input:hover::placeholder {
+    color:chocolate;
+    background-color: #ddd;
+    
+}
+button:hover {
+    background-color: chocolate;
+    color: aliceblue;
+  }
+button {
+    background-color: yellow;
+}

@@ -1,10 +1,9 @@
-span {
-    opacity: 0.4;
-}
-.sign-in {
+form {
     width: 600px;
 }
-.left.input-left,
-.Right.input-Right {
+.left {
+    width: 300px;
+}
+.Right {
     width: 300px;
 }

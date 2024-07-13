@@ -1,0 +1,6 @@
+/* li::before {
+    content: "😊";
+} */
+ li {
+    list-style-image: url(mặt\ cười.png);
+ }
