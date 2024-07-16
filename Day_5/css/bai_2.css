@@ -1,0 +1,4 @@
+div[class^="b"] {
+    color: azure;
+    background-color: chocolate;
+}

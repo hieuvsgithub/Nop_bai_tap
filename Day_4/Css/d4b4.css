@@ -1,0 +1,27 @@
+h1 {
+    color: rgb(59, 78, 114);
+}
+.instruct {
+    color: rgb(51, 119, 159);
+}
+.find-out-more-link {
+    color: rgb(58, 58, 202);
+}
+div.Content {
+    width: 600px;
+    border: 1px solid rgb(27, 32, 32);
+    border-radius: 2% 2% 2% 2%;
+}
+div.main {
+    width: 650px;
+}
+p.instruct {
+    width: 600px;
+    color: black;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
