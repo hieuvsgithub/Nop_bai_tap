@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai_1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="form">
+      <form class="content">
+        <h1>Hey There</h1>
+        <p>
+          <b> We'd like to hear form you. </b> Send us your message or just say
+          hy with our contact form or directly via phone, we love to chat.
+        </p>
+        <div class="information">
+          <div class="item-user">
+            <label for="user">
+              <div class="icon"><i class="fa-solid fa-user fa-2x"></i></div>
+            </label>
+            <input type="text" id="user" placeholder="Your name" />
+            <div>Enter your name</div>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="item-email">
+            <label for="email">
+              <div class="icon"><i class="fa-solid fa-envelope fa-2x"></i></div>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your@domain.com"
+              value=""
+              required
+            />
+            <div>Enter your email</div>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="item-mobile">
+            <label for="mobile">
+              <div class="icon">
+                <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
+              </div>
+            </label>
+            <input
+              type="number"
+              id="mobile"
+              placeholder="+0123456789"
+              min="0"
+              max=""
+            />
+            <div>Enter your phon</div>
+          </div>
+          <div class="item-file">
+            <label for="file">
+              <div class="icon"><i class="fa-solid fa-file fa-2x"></i></div>
+            </label>
+            <select>
+              <option value="0" id="file">Subject</option>
+              <option value="1" id="file">abc</option>
+              <option value="2" id="file">def</option>
+            </select>
+            <div>Enter your subject</div>
+          </div>
+          <div class="item-message">
+            <label for="chat">
+              <div class="icon">
+                <i class="fa-regular fa-comment fa-2x"></i>
+              </div>
+            </label>
+            <textarea
+              name="massage"
+              id="massage"
+              placeholder="message"
+              cols="30"
+              rows="10"
+              style="resize: none"
+            >
+            </textarea>
+            <div>Enter your message</div>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="select">
+            <input class="ttt" type="checkbox" />
+            <p>Send me a copy of this message</p>
+            <button type="submit">SEND</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

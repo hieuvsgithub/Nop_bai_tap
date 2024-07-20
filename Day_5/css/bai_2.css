@@ -1,4 +1,25 @@
-div[class^="b"] {
+label {
+    background-color: coral;
+    font-size: 18px;
+    display: block;
     color: azure;
-    background-color: chocolate;
+    padding: 15px;
+    cursor: pointer;
+}
+label::before {
+    content: "+"; 
+    font-size: 20px;
+}
+input:checked ~ label::before {
+    content: "-";
+    font-size: 20px;
+}
+p {
+    max-height: 0;
+    padding-left: 15px;
+    overflow: hidden;
+    background-color: white;
+} 
+input:checked ~ p {
+    max-height: 500px;
 }

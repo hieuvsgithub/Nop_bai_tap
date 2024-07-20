@@ -1,0 +1,64 @@
+html {
+    font-family: Roboto;
+    margin: none;
+    Background: #ebf5fe
+} 
+.main {
+    width: 1200px;
+    display: inline-block;
+}
+[class^="icon"] {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.item {
+    width: 300px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+}
+[class^="item-"] {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+}
+i {
+    color: aliceblue;
+    background-color: transparent;
+} 
+a {
+    text-decoration: none;
+    color: blue; 
+    font-weight: 700;
+}
+p {
+    Color: #666666;
+}
+.icon-unique {
+    background-color: aqua;
+}
+.icon-digital {
+    background-color: red;
+}
+.icon-quick {
+    background-color: blueviolet;
+}
+.icon-theme {
+    background-color: rgb(198, 131, 50);
+}
+.icon-web {
+    background-color: rgb(19, 104, 17);
+}
+.icon-responsive {
+    background-color: rgb(129, 154, 29);
+}
+.item:hover {
+    border: 1px solid red;
+}
