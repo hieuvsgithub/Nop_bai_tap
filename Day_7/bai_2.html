@@ -12,6 +12,7 @@
   </head>
   <body>
     <form action="">
+      <!-- ///// bên trái ///////// -->
       <div class="left">
         <div class="logo-trademark">
           <div class="logo">JL</div>
@@ -37,19 +38,35 @@
           </li>
         </ul>
       </div>
-      <!--  -->
-      <i class="fa-solid fa-arrow-right-long"></i>
+      <div class="float">
+        <i id="arrow-right" class="fa-solid fa-arrow-right-long"></i>
+      </div>
+      <!--//////////// bên phải ///////////////-->
       <div class="right">
         <div>
           <h3>Login to <span>your account</span></h3>
-          <input type="text" name="Email" placeholder="Email Address" />
-          <input type="text" name="password" placeholder="Password" />
-          <div>
-            <label for=""> <input type="checkbox" /> Remember me </label>
-            <a href=""></a>
+          <input
+            type="text"
+            name="Email"
+            class="email"
+            placeholder="Email Address"
+          />
+          <input
+            type="text"
+            name="password"
+            class="passwword"
+            placeholder="Password"
+          />
+          <div class="support">
+            <label class="remember" for="">
+              <input type="checkbox" /> Remember me
+            </label>
+            <a class="forgot" href="">Forgot Passwword</a>
           </div>
           <button>LOGIN</button>
-          <div>Don't have an account? <a href=""> Register here </a></div>
+          <div class="register">
+            Don't have an account? <a href=""> Register here </a>
+          </div>
         </div>
       </div>
     </form>
