@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Asap;
+}
+
+.box {
+    width: 100%;
+    height: 50vh;
+    background: url("https://ircdn.vingroup.net/storage/Uploads/Photos/Landmark81banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.content {
+    position: absolute;
+    bottom:0%;
+    left: 4%;
+    display: flex;
+    color: white;
+}
+img {
+    width: 200px;
+    background: white;
+}
+.information {
+    margin: 15px 15px;
+
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+p {
+    display: inline;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+span {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+ul {
+    font-size: 0;
+    margin-right: 30px;
+    float: right;
+
+}
+li {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 5px 10px;
+}
+a {
+    text-decoration: none;
+    color: #3f3424;
+    font-weight: 600;
+}
+ul li a:hover
+{ 
+    color: #dc5e55;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #dc5e55;
+}
