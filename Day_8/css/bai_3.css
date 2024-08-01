@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: Asap;
 }
-main {
+main { 
     max-width: 1200px;
     margin: 10px 100px;
 }
@@ -40,7 +40,13 @@ li {
     text-align: center;
 }
 a {
+    display: inline-block;
+    width: 120px;
     padding: 5px 10px;
     border-radius: 50%;
-    margin: 10px 20px;
+    
+}
+span {
+    font-style: italic;
+    font-size: 0.6rem;
 }

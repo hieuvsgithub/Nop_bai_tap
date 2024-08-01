@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+.left {
+    width: 50%;
+    float: left;
+    height: 100vh;
+}
+.left .item-content {
+    width: 500px;
+    margin: 20px auto;
+    flex-direction: row;
+
+}
+.left .item-content .item {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+.left .item-content .item:hover {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.left .item-content .item:hover .content {
+    text-align: left;
+}
+.left .item-content .item:hover button {
+    background: rgba(170, 96, 36, 0.774);
+    color: white;
+}
+.left .item-content .item .content {
+    /* width: 250px; */
+    /* flex-grow: 1; */
+    text-align: right;
+
+}
+.left .item-content .item .icon {
+    /* flex-grow: 2; */
+    display: flex;
+    flex-direction: column;
+}
+.line {
+    width: 0;
+    height: 0;
+    border-top-width: 0;
+    flex-basis: 143px;
+    border-left: 1px solid rgb(240, 222, 222);
+    justify-content: center;
+    margin: 1px auto;
+}
+.left .item-content .item .time {
+    
+    font-size: 0.8rem;
+    width: 135px;
+}
+button {
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    background: rgba(215, 209, 209, 0.31);
+    margin: 10px;
+}
+
+h2 {
+    font-family: "Space Grotesk";
+    text-transform: capitalize;
+    margin-bottom: 10px ;
+}
+i {
+    color: rgb(218, 230, 230);
+    background: rgb(15, 206, 79);
+    border-radius: 50%;
+    font-size: 0.7rem; 
+}
+p {
+    line-height: 1.8rem;
+}
+.right {
+    width: 50%;
+    float: right;
+}
+.right .box {
+    width: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+.right .box .img-below {
+    float: right;
+    display: block;
+}
+.right .box .img-above {
+    position: absolute;
+    top: 62px;
+    left: 90px;
+    display: block;
+}
+.right .box .img-above img {
+    max-height: 270px;
+}
