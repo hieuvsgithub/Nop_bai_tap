@@ -24,14 +24,22 @@
 }
 .left .item-content .item:hover {
     display: flex;
-    flex-direction: row-reverse;
 }
 .left .item-content .item:hover .content {
     text-align: left;
+    transition: transform;
+    transition-duration: 1s;
+    transform: translateX(400px);
+}
+.left .item-content .item:hover .time {
+    transform: translateX(-120px);
+    transition: transform;
+    transition-duration: 1s;
 }
 .left .item-content .item:hover button {
     background: rgba(170, 96, 36, 0.774);
     color: white;
+    cursor: pointer;
 }
 .left .item-content .item .content {
     /* width: 250px; */
@@ -67,7 +75,7 @@ button {
 }
 
 h2 {
-    font-family: "Space Grotesk";
+    font-family: "Space Grotesk"; 
     text-transform: capitalize;
     margin-bottom: 10px ;
 }

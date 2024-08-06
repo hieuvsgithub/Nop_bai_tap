@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="left">
+        <label class="box" for="name">Username:</label>
+        <label class="box" for="password">Password:</label>
+        <label class="box" for="city"
+          >City of <br />
+          Employment:</label
+        >
+        <label class="box" for="sever">Web Sever:</label>
+        <label class="box">
+          Please specify <br />
+          your role
+        </label>
+        <label class="box">
+          Singer Sign-on <br />
+          to the following
+        </label>
+      </div>
+      <div class="right">
+        <input type="text" id="name" name="name" />
+        <input type="text" id="password" name="password" />
+        <input type="text" id="city" name="city" />
+        <select name="sever" id="sever">
+          <option value="0">-Choose a server-</option>
+          <option value="1">Apache HTTP</option>
+          <option value="2">Apache tomcat</option>
+        </select>
+        <label><input type="radio" name="specify" /> Admin</label>
+        <label><input type="radio" name="specify" /> Engineer</label>
+        <label><input type="radio" name="specify" /> Manager</label>
+        <label><input type="radio" name="specify" /> Guest</label>
+        <label><input type="checkbox" name="specify" /> Mail</label>
+        <label><input type="checkbox" name="specify" /> Payroll</label>
+        <label><input type="checkbox" name="specify" /> Self-service</label>
+        <div class="button">
+          <button>Login</button>
+          <button>Reset</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

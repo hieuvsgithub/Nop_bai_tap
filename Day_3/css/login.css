@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form {
+    max-width: 350px;
+    margin: 30px auto;
+    border: 1px solid red;
+    padding: 5px;
+    display: flex;
+}
+.left {
+    width: 35%;
+}
+.left label {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.left label:nth-child(5) {
+    margin-top: 10px;
+}
+.left label:nth-child(6) {
+    margin-top: 25px;
+}
+.right {
+    width: 65%;
+}
+.right input[type="text"] {
+    margin-bottom: 30px;
+    border: 1px solid rgb(156, 232, 249);
+}
+.right select {
+    display: block;
+    margin: 16px 0;
+    border: 1px solid rgb(156, 232, 249);
+}
+.right label {
+    display: block;
+    margin: 5px;
+}
+.right label:nth-of-type(4) {
+    margin-bottom: 15px;
+}
+.right .button {
+    margin-top: 20px;
+}
+.right .button button {
+    padding: 5px 10px;
+    border: 1px solid rgb(156, 232, 249);
+}

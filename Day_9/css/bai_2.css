@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 section {
-    max-width: 1000px;
+    max-width: 1000px; 
     margin: 30px auto;
     padding: 10px;
     display: flex;
@@ -16,22 +16,21 @@ section {
 .item {
     width: 300px;
     height: 225px;
-    padding: 30px 25px;
+    padding: 0 25px;
     border: 1px solid rgba(171, 166, 166, 0.782);
     position: relative;
 }
-.conten {
-    position: absolute;
-}
+
 img {
     max-height: 225px;
     width: 300px;
     position: relative;
+    
 }
 .item .icon {
     font-size: 2rem;
     color: rgb(209, 146, 50);
-    margin-bottom: 20px;
+    margin: 20px;
 }
 .item h2 {
     font-size: 1.3rem;
@@ -40,24 +39,62 @@ img {
 .item p {
     color: rgb(71, 69, 65);
     margin-bottom: 60px;
-    transition-property: all;
-    transition-duration: 1s;
+
+}
+.item a i {
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid rgb(195, 192, 185); 
 }
 .item a {
     display: none;
+    text-decoration: none;
 }
 .item:hover a {
     display: block;
+    color: white;
+    position: relative;
+    top: -60px;
+    transition: top;
+    transition-duration: 1s;
+
 }
-.item:hover .icon {
-    display: none;
+.item:hover .icon i {
+    /* display: none; */
+    transform: scale(0 , 0);
+    transition: transform;
+    transition-duration: 0.1s;
 }
 .item:hover p {
-    padding-top: 20px;
+    transition-property:  top;
+    transition-duration: 1s;
+    position: relative;
+    top: -40px;
+    color: #ffffff;
+    
+}
+.item:hover h2 {
+    transition-property:  top;
+    transition-duration: 1s;    
+    position: relative;
+    top: -40px;
+    color: #ffffff;
 }
 .item:hover {
-    background: rgba(221, 121, 96, 0.502);
+    background-image: url("https://fastly.picsum.photos/id/909/300/300.jpg?hmac=JqWdYc9oZ6sjTpcXI2QMDosuvAFEwryTPshCz22TR_U");
+}   
+.item:hover .phu {
+    position: absolute;
+    inset: 0;
+    background: rgba(221, 121, 96, 0.628);
+    z-index: 0;
 }
-.item:hover * {
-    color: white;
+.content {
+    position: absolute;
+    z-index: 999;
+}
+a i:hover {
+    color: black;
+    background: rgb(246, 243, 243);
 }

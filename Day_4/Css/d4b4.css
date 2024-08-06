@@ -6,6 +6,7 @@ h1 {
 }
 .find-out-more-link {
     color: rgb(58, 58, 202);
+    font-weight: 500;
 }
 div.Content {
     width: 600px;
@@ -13,10 +14,9 @@ div.Content {
     border-radius: 2% 2% 2% 2%;
 }
 div.main {
-    width: 650px;
+    max-width: 550px;
 }
 p.instruct {
-    width: 600px;
     color: black;
 }
 main {
@@ -24,4 +24,11 @@ main {
     justify-content: center;
     align-items: center;
 }
-
+.Content-js {
+    padding: 20px 20px;
+    border: 1px solid rgb(76, 76, 76);
+    border-radius: 3px;
+}
+a {
+    color: rgb(59, 113, 113);
+}

@@ -1,6 +1,25 @@
-/* blockquote::before {
-    content: "⭐️";
-  }
-blockquote::after {
-    content: "⭐️";
-  } */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 600px;
+  margin: 60px auto;
+  height: 200px;
+  display: flex;
+}
+blockquote {
+  width: 500px;
+  margin: 30px auto;
+}
+.fa-quote-right {
+  position: relative;
+  right: 0;
+  bottom: -85px;
+}
+i {
+  padding: 10px;
+  background-color: rgb(191, 191, 191);
+  border-radius: 50%;
+}

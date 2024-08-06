@@ -3,19 +3,26 @@ footer {
     background-color: rgb(54, 72, 91);
     border: auto;
     border-color: black;
+    margin: 30px auto;
+    padding: 5px;
 }
 span {
     color:chocolate;
 }
-input:hover::placeholder {
-    color:chocolate;
-    background-color: #ddd;
-    
+input {
+    padding: 5px;
 }
-button:hover {
+footer:hover input::placeholder {
+    color:chocolate;
+}
+footer:hover input {
+    background-color: rgb(168, 168, 168);
+}
+footer:hover button {
     background-color: chocolate;
     color: aliceblue;
   }
 button {
     background-color: yellow;
+    padding: 5px;
 }

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table {
+    width: 300px;
+    border: 1px solid black;
+    margin: 60px auto;
+}
+table .calculate {
+    text-align: right;
+    padding: 20px 10px;
+    border: 1px solid black;
+    font-size: 1.4rem;
+}
+table tr td button{
+    padding: 40px 20px;
+    width: 100%;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    font-weight: 600;
+    background-color: rgb(231, 244, 255);
+    cursor: pointer;
+}
