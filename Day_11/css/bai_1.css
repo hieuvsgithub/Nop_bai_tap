@@ -1,0 +1,512 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.header-nav {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+.header-nav .nav {
+    display: block;
+    margin: 20px 20px;
+}
+.header-nav .nav .container  {
+    display: flex;
+    justify-content: space-between;
+}
+.container .header-logo .link-logo {
+    display: inline-block;
+}
+.container .nav-page ul li {
+    display: inline-block;
+    margin: 5px;
+}
+ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+    padding: 5px;
+    font-weight: 500;
+}
+ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+.container .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+    background-color: aliceblue;
+    padding:0 10px;
+
+}
+.search .search-input {
+    border-right: 1px solid rgb(176, 176, 176);
+    margin-right: 5px;
+}
+.search .search-input i {
+    margin: 5px;
+    color:  rgb(62, 62, 62);
+}
+.search .search-input input {
+    display: inline-block;
+    height: 30px;
+    margin-right: 5px;
+    border: none;
+    background-color: aliceblue;
+}
+.search .bag-shopping {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: relative;
+}
+.search .bag-shopping::after {
+    content: "2";
+    width: 20px;
+    height:20px ;
+    background-color: red;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    color: white;
+    font-weight: 600;
+}
+/* code header-review-grover bắt đầu từ đây  */
+.header-nav .header-review-grover {
+    display: block;
+    padding: 20px 0;
+}
+.header-nav .header-review-grover .container {
+    display: flex;
+    margin: 30px 20px;
+    max-width: 1200px;
+}
+.header-review-grover .container .left {
+    width: 50%;
+    /* flex-grow: 1; */
+    overflow: hidden;
+}
+.left .left-container .more-than-faster-content {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(255, 207, 207);
+    border-radius: 99px;
+    margin-bottom: 20px;
+}
+.left-container .more-than-faster-content h3 {
+    display: inline-block;
+    color: brown;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+.left-container .content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin: 20px 0  ;
+}
+.left-container .content h1 span {
+    color: brown;
+    font-weight: 600;
+}
+.left-container .content p {
+    margin: 30px 0;
+    font-size: 1.3rem;
+    width: 450px;
+    color:  rgb(62, 62, 62);
+}
+.left .left-container .btn {
+    display: flex;
+}
+.left-container .btn .btn-order-now a {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 20px 30px;
+    background-color: rgb(134, 44, 44);
+    border-radius: 10px;
+    border: 1px solid rgb(134, 44, 44);
+}
+.left-container .btn .btn-order-now a:hover {
+    background-color: white;
+    color: rgb(134, 44, 44);
+}
+.left-container .btn .btn-order-process {
+    display: flex;
+    align-items: center;
+}
+.btn .btn-order-process .order-process a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.btn .btn-order-process .order-process a:hover {
+    color: rgb(177, 177, 177);
+}
+.header-review-grover .container .right {
+    max-width: 50%;
+}
+.header-review-grover .container .right img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/* container-service */
+.container-service {
+    display: block;
+    background-color: rgb(255, 227, 227);
+    padding: 40px 0;
+}
+.container-service .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.container-service .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* position: relative;
+    z-index: 99; */
+}
+.container-service .container .content h5 {
+    display: inline-block;
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.container-service .container .content h2 {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+.container-service .container .service {
+    display: block;
+}
+.container .service .container-service {
+    display: flex;
+    justify-content: center;
+}
+.service .container-service .free-shipping{
+    flex-grow: 1;
+
+}
+.container-service .free-shipping .content, 
+.container-service .days-returns .content,
+.container-service .Secure-checkout .content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+}
+.container-service .days-returns .content img,
+.container-service .free-shipping .content img,
+.container-service .Secure-checkout .content img  {
+    height: 70px;
+    margin-bottom: 40px;
+}
+.container-service .days-returns .content h3,
+.container-service .free-shipping .content h3,
+.container-service .Secure-checkout .content h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.container-service .days-returns .content p,
+.container-service .free-shipping .content p,
+.container-service .Secure-checkout .content p {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.service .container-service .days-returns {
+    flex-grow: 1;
+}
+.service .container-service .Secure-checkout {
+    flex-grow: 1;
+}
+/* .content::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: brown;
+    z-index: -1;
+} */
+
+
+/* feature-grover */
+.feature-grover {
+    background-color: white;
+    padding:40px 0;
+}
+.feature-grover .container {
+    display: flex;
+    width: 1200px;
+    margin: 20px auto;
+}
+.feature-grover .container .left {
+    width: 50%;
+}
+.feature-grover .container .left img {
+    width: 100%;
+}
+.feature-grover .container .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container .right .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 60px;
+}
+.right-container .header-content-title h5 {
+    font-size: 1rem;
+    color: rgb(69, 180, 143);
+}
+.right-container .header-content-title h2 {
+    font-size: 2.2rem;
+    width: 300px;
+    font-weight: 700;
+    padding:10px 0;
+}
+.right-container .header-content-title p {
+    padding: 40px 0;
+    width: 400px;
+    line-height: 1.8rem;
+    margin-bottom:20px ;
+    color: rgb(124, 124, 124);
+    font-size: 1.1rem;
+}
+.right-container .btn a {
+    padding: 20px 30px;
+    background-color: rgb(215, 70, 70);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px 0;
+    border: 1px solid red;
+}
+.right-container .btn a:hover {
+    background-color: white;
+    color: rgb(134, 44, 44);
+}
+/* feature-2-grover */
+.feature-2-grover {
+    background-color: white;
+    padding:40px 0;
+}
+.feature-2-grover .container {
+    display: flex;
+    width: 1200px;
+    margin: 20px auto;
+}
+.feature-2-grover .container .left,
+.feature-2-grover .container .right {
+    width: 50%;
+}
+.feature-2-grover .container .right img {
+    width: 100%;
+}
+.feature-2-grover .container .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container .left .left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 60px;
+    margin-left: 40px;
+}
+.left-container .header-content-title h5 {
+    font-size: 1rem;
+    color: rgb(243, 190, 84);
+}
+.left-container .header-content-title h2 {
+    font-size: 2.2rem;
+    width: 400px;
+    font-weight: 700;
+    padding:10px 0;
+}
+.left-container .header-content-title p {
+    padding: 30px 0;
+    width: 400px;
+    line-height: 1.8rem;
+    margin-bottom:20px ;
+    color: rgb(124, 124, 124);
+    font-size: 1.1rem;
+}
+.left .left-container .btn .explore {
+    padding: 20px 30px;
+    background-color: rgb(215, 70, 80);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 1px solid red;
+}
+.left .left-container .btn .explore:hover {
+    background-color: white;
+    color: rgb(134, 44, 44);
+}
+/* cta-grover-grocery-wrapper */
+.cta-grover-grocery-wrapper {
+    display: block;
+    background-color: rgb(252, 217, 217);
+    padding: 40px 0;
+}
+.cta-grover-grocery-wrapper .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+.cta-grover-grocery-wrapper .container .left,
+.cta-grover-grocery-wrapper .container .right {
+    width: 50%;
+}
+.cta-grover-grocery-wrapper .container .left {
+    display: flex;
+}
+.container .left .left-container {
+    margin:20px auto;
+}
+.container .right .right-container-contact {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 60px;
+    margin-left: 40px;
+}
+.right .right-container-contact .content h5 {
+    font-size: 1.2rem;
+    color: rgb(221, 82, 82);
+}
+.right .right-container-contact .content h2 {
+    font-size: 2.2rem;
+    width: 300px;
+    font-weight: 700;
+    padding:10px 0;
+}
+.right .right-container-contact .content p {
+    padding: 40px 0;
+    width: 400px;
+    line-height: 1.8rem;
+    margin-bottom:20px ;
+    color: rgb(124, 124, 124);
+    font-size: 1.1rem;
+}
+.play-store,
+.app-store {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 30px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 5px;
+    margin-right: 30px;
+}
+.play-store img,
+.app-store img {
+    padding-right: 20px;
+}
+.play-store span,
+.app-store span {
+    font-size: 1.1rem;
+    font-weight: 600;
+} 
+/* footer */
+footer {
+    background-color: white;
+}
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.footer-grover-grocery-top {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+.footer-grover-grocery-top .item {
+    width: 200px;
+    flex-grow: 1;
+}
+.footer-grover-grocery-top .item img,
+.footer-grover-grocery-top .item h4 {
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 20px 0;
+}
+.item ul {
+    list-style-type: none;
+}
+.item ul li {
+    margin: 10px 0;
+}
+.item p ,
+.item ul li a {
+    color: rgb(115, 115, 115);
+    font-size: 1.1rem;
+}
+.item ul li a:hover {
+    color: black;
+}
+.footer-grover-grocery-top .about-us {
+    margin-right: 30px;
+}
+.footer-grover-grocery-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0;
+}
+.footer-grover-grocery-copyright {
+    color: rgb(115, 115, 115);
+    font-size: 0.9rem;
+}
+.footer-grover-grocery-condition {
+    display: flex;
+}
+.footer-grover-grocery-condition-txt {
+    margin-right: 10px;
+}
+.footer-grover-grocery-condition-txt a {
+    color: rgb(115, 115, 115);
+    font-size: 0.9rem;
+}
+.footer-grover-grocery-condition-txt a:hover {
+    color: black;
+}
