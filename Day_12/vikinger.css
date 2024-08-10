@@ -1,0 +1,397 @@
+:root {
+    --color-txt: white ;
+    --txt-font-family: "Rajdhani", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--txt-font-family);
+}
+*::selection {
+    background-color: aqua;
+}
+html {
+    font-size: 10px;
+}
+a {
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+}
+body {
+    max-height: 1200px;
+    background-color: rgb(83, 27, 126);
+    background-image: url("https://github.com/hoanganf8/htmlcss_project02/blob/main/image/landing-background.jpg?raw=true");
+    background-repeat: no-repeat;
+    background-size: 170% auto ;
+    padding: 80px 0 100px 0;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info .logo .logo-vikinger {
+    background-color: transparent;
+}
+.info .logo .logo-vikinger {
+    max-height: 70px;
+}
+.info .header h1,
+.info .header h2 {
+    color: var(--color-txt);
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.info .header h2 {
+    margin-top: 20px;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2rem;
+}
+.info .header h1 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 9rem;
+    position: relative;
+    top: -20px;
+}
+.info .btn {
+    border: 1px solid var(--color-txt);
+    border-radius: 15px;
+    overflow: hidden;
+}
+.info .btn .btn-login,
+.info .btn .btn-register {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-txt);
+    padding: 20px 70px;
+    display: inline-block;
+    cursor: pointer;
+}
+#btn-register:checked ~ .info .btn .btn-register,
+#btn-login:checked ~ .info .btn .btn-login {
+    color: black;
+    background-color: white;
+}
+
+/* form login */
+.form {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.form .form-login,
+.form  .form-register {
+    background-color: white;
+    padding: 60px;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 60px 0 rgba(74, 72, 113, 0.12);
+}
+.form .form-login {
+    /* opacity: 1;
+    visibility: hidden;
+  position: absolute; */
+    position: absolute;
+    z-index: 1;
+}
+.form  .form-register {
+    /* opacity: 0;
+   visibility: hidden;
+  position: absolute; */
+    position: relative;
+    visibility: hidden;
+}
+.form .form-register h2,
+.form .form-login h2 {
+    font-size: 26px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 60px;
+}
+.form-register form,
+.form-login form {
+    display: flex;
+    flex-direction: column;
+}
+.form-login form {
+    width: 400px;
+}
+/* Sự kiện checked form login , register */ 
+#btn-register:checked ~ .form .form-register {
+    z-index: 2;
+    visibility: visible;
+}
+/* #btn-register:checked ~ .info .form .form-login {
+    visibility: hidden;
+} */
+
+
+.form-register form .form-row,
+.form-login form .form-row {
+    max-width: 100%;
+    position: relative;
+}
+.form-register form .form-row .email,
+.form-register form .form-row .name,
+.form-register form .form-row .password,
+.form-register form .form-row .repeat-password,
+.form-login form .form-row .name,
+.form-login form .form-row .password {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 0.5px solid rgb(175, 175, 175);
+    
+}
+.form-register form .form-row .stickers-your-email,
+.form-register form .form-row .stickers-name,
+.form-register form .form-row .stickers-password,
+.form-register form .form-row .stickers-repeat-password,
+.form-login form .form-row .stickers-name,
+.form-login form .form-row .stickers-password {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    font-size: 16px;
+    color: rgb(134, 134, 134);
+    display: inline-flex;
+    user-select: none;
+    background-color: white;
+    transition-property: transform , font-size;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+.form-register form .form-row:nth-child(2),
+.form-register form .form-row:nth-child(3),
+.form-register form .form-row:nth-child(4),
+.form-login form .form-row:nth-child(2),
+.form-login form .form-row:nth-child(3) {
+    margin-top: 30px;
+}
+.form-register form .form-row:nth-child(5),
+.form-login form .form-row:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.form-register form .form-row:nth-child(5) .form-item,
+.form-login form .form-row:nth-child(3) .form-item {
+    display: flex;
+    align-items: center;
+}
+.form-register form .form-row:nth-child(5) .form-item label,
+.form-row:nth-child(3) .form-item label {
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+}
+.form-register form .form-row:nth-child(5) .form-item label::before ,
+.form-row:nth-child(3) .form-item label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid rgb(92, 92, 92);
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+}
+.form-register form .form-row:nth-child(5) .form-item #register-newsletter:checked ~ label::before,
+.form-row:nth-child(3) .form-item #remember-me:checked ~ label::before {
+    background-color: aqua;
+    content: "X";
+    color: var(--color-txt);
+    border: none;
+}
+.form-row:nth-child(3) .form-item a {
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+}
+.form-row:nth-child(3) .form-item a:hover {
+    color: rgb(0, 202, 202);
+}
+.form-register form .form-row:nth-child(6),
+.form-row:nth-child(4) {
+    margin-top: 30px;
+}
+.form-row .btn-register-now ,
+.form-row .btn-login-to-your-account {
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-txt);
+    width: 100%;
+    padding: 18px ;
+    border-radius: 10px;
+    background-color: rgb(73, 73, 255);
+    border: none;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease;
+}
+.form-row .btn-register-now {
+    background-color: rgb(85, 218, 255);
+} 
+.form-row .btn-login-to-your-account:hover {
+    background-color:  rgb(73, 73, 255);
+}
+.form-row .btn-register-now:hover {
+    background-color: rgb(49, 210, 255);
+}
+.form-register .form-text,
+.form-login .suggest {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    position: relative;
+}
+.form-register .form-text p {
+    color: rgb(62, 63, 94);
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+.form-login .suggest p {
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+}
+.form-register .form-text p a {
+    color:  rgb(0, 202, 202);
+}
+.form-login .suggest p::before,
+.form-login .suggest p::after {
+    content: "";
+    border: 0.5px solid rgb(228, 228, 228);
+    border-left-width: 60px;
+    margin: 0 10px;
+    position: absolute;
+}
+.form-login .suggest p::before {
+    left: 0;
+    top: 7px;
+}
+.form-login .suggest p::after {
+    right: 0;
+    top: 7px;
+}
+.form-login .nav-link {
+    margin-top: 30px;
+    display: inline-block;
+}
+.nav-link ul {
+    display: block;
+}
+.nav-link ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+.nav-link ul li a {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.nav-link ul li .facebook {
+    background-color: rgb(97, 97, 250);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    display: inline-block;
+}
+.nav-link ul li .twitter {
+    background-color: aqua;
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.nav-link ul li .twitch {
+    background-color: rgb(167, 73, 255);
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.nav-link ul li .youtube {
+    background-color: rgb(255, 79, 79);
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.nav-link ul li .twitter i,
+.nav-link ul li .twitch i,
+.nav-link ul li .youtube i,
+.nav-link ul li .facebook i {
+    color: white;
+
+}
+.nav-link ul li .facebook i {
+    background-color: rgb(97, 97, 250);
+}
+/* focus outline input ở đây */
+.form-register form .form-row .email:focus,
+.form-register form .form-row .name:focus,
+.form-register form .form-row .password:focus,
+.form-register form .form-row .repeat-password:focus,
+.form-login form .form-row .name:focus,
+.form-login form .form-row .password:focus {
+    outline: 0.5px solid rgb(114, 109, 255);
+    border: none;
+}
+/* hiệu ứng các liên kết ngoài  */
+.nav-link ul li .twitter:hover,
+.nav-link ul li .twitch:hover,
+.nav-link ul li .youtube:hover,
+.nav-link ul li .facebook:hover {
+    transform: translateY(-10px);
+    /* position: relative;
+    top: -10px; */
+}
+/* di chuyển label ở đây */
+.form-register form .form-row .name:focus ~ .stickers-name,
+.form-register form .form-row .password:focus ~ .stickers-password,
+.form-register form .form-row .repeat-password:focus ~ .stickers-repeat-password,
+.form-login form .form-row .name:focus ~ .stickers-name,
+.form-login form .form-row .password:focus ~ .stickers-password,
+.form-register form .form-row .email:focus ~ .stickers-your-email {
+    transform: translate(-5px,-25px);
+    /* transform: scale(0.8, 0.8); */
+    font-size: 12px;
+    padding: 3px;
+}
+
+@media screen and (max-width: 1499.98px) {
+
+}
+@media screen and (max-width: 1364.98px) {
+
+}
+
+@media screen and (max-width: 599.98px) {
+
+}
+
+@media screen and (max-width: 499.98px) {
+    
+}
+
+
+
+
+
+

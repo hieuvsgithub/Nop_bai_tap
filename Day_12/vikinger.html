@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikinger | Home</title>
+    <link rel="stylesheet" href="vikinger.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="form-login-register-vikinger">
+      <input type="radio" id="btn-login" name="btn" checked hidden />
+      <input type="radio" id="btn-register" name="btn" hidden />
+      <div class="info">
+        <div class="logo">
+          <img
+            class="logo-vikinger"
+            src="https://huyhtf88188.github.io/f8_fullstack/image/vk-removebg-preview.png"
+            alt=""
+          />
+        </div>
+        <div class="header">
+          <h2>Welcome to</h2>
+          <h1>Vikinger</h1>
+        </div>
+        <div class="btn">
+          <label class="btn-login" for="btn-login">Login</label>
+          <label class="btn-register" for="btn-register">Register</label>
+        </div>
+      </div>
+      <div class="form">
+        <div class="form-login">
+          <h2>Account Login</h2>
+          <form action="">
+            <div class="form-row">
+              <input class="name" type="text" name="name" id="name" checked />
+              <label class="stickers-name" for="name">Username or Email</label>
+            </div>
+            <div class="form-row">
+              <input
+                class="password"
+                type="password"
+                name="password"
+                id="password"
+              />
+              <label class="stickers-password" for="password">Password</label>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <input type="checkbox" id="remember-me" hidden />
+                <label for="remember-me">Remember Me</label>
+              </div>
+              <div class="form-item">
+                <a href="#">Forgot Password?</a>
+              </div>
+            </div>
+            <div class="form-row">
+              <button class="btn-login-to-your-account">
+                Login to your Account!
+              </button>
+            </div>
+          </form>
+          <div class="suggest">
+            <p>Login with your Social Account</p>
+          </div>
+          <!-- các liên kết ngoài -->
+          <nav class="nav-link">
+            <ul>
+              <li>
+                <a class="facebook" href="#">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="twitter" href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="twitch" href="#">
+                  <i class="fa-brands fa-twitch"></i>
+                </a>
+              </li>
+              <li>
+                <a class="youtube" href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="form-register">
+          <h2>Create your Account!</h2>
+          <form action="">
+            <div class="form-row">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                id="email"
+                checked
+              />
+              <label class="stickers-your-email" for="email">Your Email</label>
+            </div>
+            <div class="form-row">
+              <input class="name" type="text" name="name" id="name" checked />
+              <label class="stickers-name" for="name">Username</label>
+            </div>
+            <div class="form-row">
+              <input
+                class="password"
+                type="password"
+                name="password"
+                id="password"
+              />
+              <label class="stickers-password" for="password">Password</label>
+            </div>
+            <div class="form-row">
+              <input
+                class="repeat-password"
+                type="password"
+                name="repeat-password"
+                id="repeat-password"
+                checked
+              />
+              <label class="stickers-repeat-password" for="repeat-password">
+                Repeat password
+              </label>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <input
+                  type="checkbox"
+                  id="register-newsletter"
+                  checked
+                  hidden
+                />
+                <label for="register-newsletter">
+                  Send me news and updates via email
+                </label>
+              </div>
+            </div>
+            <div class="form-row">
+              <button class="btn-register-now">Register Now!</button>
+            </div>
+          </form>
+          <div class="form-text">
+            <p>
+              You'll receive a confirmation email in your inbox with a link to
+              activate your account. If you have any problems,
+              <a href="#">contact us</a>!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
