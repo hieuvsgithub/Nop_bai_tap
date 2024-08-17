@@ -34,6 +34,9 @@
   <body>
     <div class="wrapper">
       <div class="wrapper-inner">
+        <input type="checkbox" id="btn-bar" hidden />
+        <input type="checkbox" id="btn-nav" hidden />
+
         <!-- Sidebar -->
         <aside class="sidebar">
           <a href="" class="logo-link">
@@ -43,31 +46,31 @@
           <h2 class="heading">Explore</h2>
 
           <nav class="nav">
-            <a href="" class="nav-item">
+            <a href="#" class="nav-item">
               <img src="icon/sidebar-icon-1.svg" alt="" class="icon" />
               new in
             </a>
-            <a href="" class="nav-item">
+            <a href="#" class="nav-item">
               <img src="icon/gia.svg" alt="" class="icon" />
               price
             </a>
-            <a href="" class="nav-item">
+            <a href="#" class="nav-item">
               <img src="icon/dia-diem.svg" alt="" class="icon" />
               location
             </a>
-            <a href="" class="nav-item">
+            <a href="#" class="nav-item">
               <img src="icon/namsx.svg" alt="" class="icon" />
               year of manufacture
             </a>
-            <a href="" class="nav-item">
+            <a href="#" class="nav-item">
               <img src="icon/hop-so.svg" alt="" class="icon" />
               car gearbox
             </a>
-            <a href="" class="nav-item">
+            <a href="#" class="nav-item">
               <img src="icon/kieu-dang.svg" alt="" class="icon" />
               style
             </a>
-            <a href="" class="nav-item">
+            <a href="#" class="nav-item">
               <img src="icon/nhien-lieu.svg" alt="" class="icon" />
               fuel
             </a>
@@ -80,12 +83,9 @@
           </div>
         </aside>
 
-        <input type="checkbox" id="btn-nav" hidden />
         <!-- Header -->
         <header class="header">
-          <label class="btn-nav" for="btn-nav">
-            <i class="fa-solid fa-bars"></i>
-          </label>
+          <label class="btn-bar fa-solid fa-bars" for="btn-bar"> </label>
           <a href="#" class="header-logo">
             <img src="img/logo.svg" alt="" />
           </a>
@@ -100,6 +100,9 @@
             <a href="#" class="nav-link">Manufacturing</a>
             <a href="#" class="nav-link">Packaging</a>
           </nav>
+
+          <label for="btn-nav" class="btn-nav">&#8743;</label>
+
           <div class="actions">
             <a href="#" class="action-link">
               <img src="icon/basket.svg" alt="" class="action-icon" />
@@ -137,7 +140,11 @@
             <img src="img/img-tem-8.jpg" alt="" />
           </div>
         </main>
-        <label for="btn-nav" class="coaing"></label>
+        <label for="btn-bar" class="coaing-bar"></label>
+        <label for="btn-nav" class="coaing-nav"></label>
+        <div class="btn-chat-fixed">
+          <span class="icon"> <img src="icon/chat.svg" alt="" /></span>
+        </div>
       </div>
     </div>
   </body>

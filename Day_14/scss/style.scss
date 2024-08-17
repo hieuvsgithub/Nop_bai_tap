@@ -41,10 +41,17 @@ a {
       padding-bottom: 60px;
       padding-right: 30px;
       position: relative;
+
+      .btn-chat-fixed {
+        display: none;
+        position: fixed;
+        right: 60px;
+        bottom: 60px;
+
+      }
   }
   
-
-  @include tablet-device {
+@include miniPc-device {
     .wrapper-inner {
         width: 1200px;
         margin: 0 auto;
@@ -60,105 +67,95 @@ a {
           " main main main main"
           " main main main main";
           padding-bottom: 60px;
-          padding-right: 30px;
+          padding-right: 20px;
+          padding-left: 20px;
           position: relative;
 
-        .sidebar {
+          .sidebar {
             position: absolute;
-            visibility: hidden;
-        }  
-      }
-    
- }
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background: #fff;
+            width: 35%;
+            transform: translateX(-100%);
 
-
-
-
-
-
-
-@include pc-device {
-    .header {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 99;
-
-        .btn-nav {
-            display: block;
-            margin-right: 20px;
-
-            i {
-                font-size: 2.6rem;
+            .translate-btn {
+                display: none;
             }
-        }
+          }
 
-        .header-logo {
-            display: block;
-            margin-right: 20px;
-        }
+          .coaing-bar {
+            position: absolute;
+            inset: 0;
+            background-color: black;
+            visibility: visible;
+            opacity: 0;
+            display: none;
+          }
 
-        .search-form {
+          .btn-chat-fixed {
             display: flex;
             justify-content: center;
-            margin-left: 30px;
+            align-items: center;
+            padding: 10px 10px 7px 10px;
+            border-radius: 50%;
+            background-color: #fff;
 
-            .search {
-                width: 300px;
+            img {
+                width: 25px;
+                height: 25px;
             }
+
         }
 
-        .nav {
+          #btn-bar:checked ~ .sidebar {
+            transform: translateX(0%);
+            z-index: 2;
+          }
+
+          #btn-bar:checked ~ .coaing-bar {
+            visibility: visible;
+            opacity: 0.3;
             display: block;
+          }
+
+          #btn-bar:checked ~ .btn-chat-fixed {
+            display: none;
+          }
+      }
+
+}
+
+@include mobile-device {
+    .wrapper-inner {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 30px;
+        gap: 30px 0;
+
+        .coaing-nav {
             position: absolute;
-            top: 100%;
+            top: 264px;
             left: 0;
             right: 0;
-            background: #fff;
-            transform-origin: 0 0;
-            transform: scaleY(0%);
-            transition: transform 0.2s ease ;
+            bottom: 0;
+            background-color: black;
+            display: none;
+            transition: opacity 0.2s ease;
+        }
 
-            .nav-link {
-                display: block;
-
-                &:active {
-                    background: rgb(213, 213, 213);
-                }
-
-                &::after {
-                    content: "";
-                    display: none;
-                }
-            }
+        #btn-nav:checked ~ .coaing-nav {
+            display: block;
+            opacity: 0.3;
+        }
+        #btn-nav:checked ~ .btn-chat-fixed {
+            display: none;
         }
     }
-    
-    #btn-nav:checked ~ .header .nav {
-        transform: scaleY(100%);
-    }
- }
-
-  
-@include mobile-device {
-    .coaing {
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        top: 128px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: black;
-        grid-column: span 4;
-        grid-row: span 4;
-        }
-        #btn-nav:checked ~ .coaing {
-        visibility: visible;
-        opacity: 0.2;
-        }
 }
+
+
   
 
 

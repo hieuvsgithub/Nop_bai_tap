@@ -58,17 +58,14 @@ table {
   display: flex;
   align-items: center;
 }
-.header .btn-nav {
-  padding: 5px;
-  border-radius: 50%;
+.header .btn-bar {
+  font-size: 2.8rem;
+  padding: 10px;
+  margin-right: 20px;
   display: none;
 }
-.header .btn-nav i {
-  width: 20px;
-  height: 20px;
-  font-size: 2rem;
-}
 .header .header-logo {
+  margin-right: 20px;
   display: none;
 }
 .header .search-form {
@@ -109,13 +106,68 @@ table {
 .header .nav .nav-link:hover::after, .header .nav .nav-link.active::after {
   width: 100%;
 }
+.header .btn-nav {
+  display: none;
+  font-size: 2.8rem;
+  padding: 10px;
+  border-radius: 50%;
+  transform-origin: 50% 50%;
+  transition: transform 0.5s ease;
+}
 .header .actions {
   display: flex;
   align-items: center;
   margin-left: 50px;
   column-gap: 26px;
+  margin-right: 10px;
 }
 
+@media screen and (max-width: 991.98px) {
+  .header .btn-bar {
+    display: block;
+  }
+  .header .header-logo {
+    display: block;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .header {
+    position: relative;
+  }
+  .header .search-form {
+    width: 100%;
+  }
+  .header .nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    transform-origin: 0 0;
+    transform: scaleY(0%);
+    transition: transform 0.2s ease;
+  }
+  .header .nav .nav-link {
+    display: block;
+  }
+  .header .nav .nav-link:active {
+    background: rgb(213, 213, 213);
+  }
+  .header .nav .nav-link::after {
+    content: "";
+    display: none;
+  }
+  .header .btn-nav {
+    display: block;
+  }
+  #btn-nav:checked ~ .header .btn-nav {
+    transform: rotate(-180deg);
+  }
+  #btn-nav:checked ~ .header .nav {
+    transform: scaleY(100%);
+  }
+}
 .sidebar {
   grid-area: sidebar;
   padding: 54px 0 0 48px;
@@ -184,13 +236,6 @@ table {
   background: #e6e6e6;
 }
 
-@media screen and (max-width: 767.98px) {
-  .btn-chat {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-  }
-}
 .main {
   grid-area: main;
   display: grid;
@@ -212,16 +257,16 @@ table {
   grid-row: span 2;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 575.98px) {
   .main {
-    grid-auto-rows: 300px;
+    grid-auto-rows: 230px;
   }
   .main .wide {
     grid-column: span 4;
   }
   .main .tall {
-    grid-column: span 4;
     grid-row: span 1;
+    grid-column: span 4;
   }
 }
 html {
@@ -256,8 +301,14 @@ a {
   padding-right: 30px;
   position: relative;
 }
+.wrapper-inner .btn-chat-fixed {
+  display: none;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+}
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 991.98px) {
   .wrapper-inner {
     width: 1200px;
     margin: 0 auto;
@@ -268,82 +319,78 @@ a {
     grid-auto-flow: row;
     grid-template-areas: " header header header header" " main main main main" " main main main main" " main main main main" " main main main main";
     padding-bottom: 60px;
-    padding-right: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
     position: relative;
   }
   .wrapper-inner .sidebar {
     position: absolute;
-    visibility: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    width: 35%;
+    transform: translateX(-100%);
   }
-}
-@media screen and (max-width: 1199.98px) {
-  .header {
-    position: relative;
+  .wrapper-inner .sidebar .translate-btn {
+    display: none;
+  }
+  .wrapper-inner .coaing-bar {
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    visibility: visible;
+    opacity: 0;
+    display: none;
+  }
+  .wrapper-inner .btn-chat-fixed {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99;
+    padding: 10px 10px 7px 10px;
+    border-radius: 50%;
+    background-color: #fff;
   }
-  .header .btn-nav {
-    display: block;
-    margin-right: 20px;
+  .wrapper-inner .btn-chat-fixed img {
+    width: 25px;
+    height: 25px;
   }
-  .header .btn-nav i {
-    font-size: 2.6rem;
+  .wrapper-inner #btn-bar:checked ~ .sidebar {
+    transform: translateX(0%);
+    z-index: 2;
   }
-  .header .header-logo {
-    display: block;
-    margin-right: 20px;
-  }
-  .header .search-form {
-    display: flex;
-    justify-content: center;
-    margin-left: 30px;
-  }
-  .header .search-form .search {
-    width: 300px;
-  }
-  .header .nav {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    transform-origin: 0 0;
-    transform: scaleY(0%);
-    transition: transform 0.2s ease;
-  }
-  .header .nav .nav-link {
+  .wrapper-inner #btn-bar:checked ~ .coaing-bar {
+    visibility: visible;
+    opacity: 0.3;
     display: block;
   }
-  .header .nav .nav-link:active {
-    background: rgb(213, 213, 213);
-  }
-  .header .nav .nav-link::after {
-    content: "";
+  .wrapper-inner #btn-bar:checked ~ .btn-chat-fixed {
     display: none;
-  }
-  #btn-nav:checked ~ .header .nav {
-    transform: scaleY(100%);
   }
 }
 @media screen and (max-width: 575.98px) {
-  .coaing {
-    visibility: hidden;
-    opacity: 0;
+  .wrapper-inner {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
+    gap: 30px 0;
+  }
+  .wrapper-inner .coaing-nav {
     position: absolute;
-    top: 128px;
+    top: 264px;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: black;
-    grid-column: span 4;
-    grid-row: span 4;
+    display: none;
+    transition: opacity 0.2s ease;
   }
-  #btn-nav:checked ~ .coaing {
-    visibility: visible;
-    opacity: 0.2;
+  .wrapper-inner #btn-nav:checked ~ .coaing-nav {
+    display: block;
+    opacity: 0.3;
+  }
+  .wrapper-inner #btn-nav:checked ~ .btn-chat-fixed {
+    display: none;
   }
 }
 

@@ -25,17 +25,32 @@
     }
 }
 
-@include tablet-device {
+@include mobile-device {
     .main {
-        grid-auto-rows: 300px;
-        
+        grid-auto-rows: 230px;
+
         .wide {
             grid-column: span 4;
         }
 
         .tall {
-            grid-column: span 4;
             grid-row: span 1;
+            grid-column: span 4;
         }
     }
 }
+
+// @include tablet-device {
+//     .main {
+//         grid-auto-rows: 300px;
+        
+//         .wide {
+//             grid-column: span 4;
+//         }
+
+//         .tall {
+//             grid-column: span 4;
+//             grid-row: span 1;
+//         }
+//     }
+// }
