@@ -1,0 +1,41 @@
+.main { 
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 188px;
+    grid-auto-flow: dense;
+    gap: 22px;
+
+    > div {
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+
+    .wide {
+        grid-column: span 2;
+    }
+
+    .tall {
+        grid-row: span 2;
+    }
+}
+
+@include tablet-device {
+    .main {
+        grid-auto-rows: 300px;
+        
+        .wide {
+            grid-column: span 4;
+        }
+
+        .tall {
+            grid-column: span 4;
+            grid-row: span 1;
+        }
+    }
+}

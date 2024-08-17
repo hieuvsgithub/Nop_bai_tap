@@ -1,0 +1,82 @@
+.sidebar { 
+    grid-area: sidebar;
+    padding: 54px 0 0 48px;
+    display: flex;
+    flex-direction: column;
+
+    .heading {
+        margin-top: 60px;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        row-gap: 12px;
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            column-gap: 12px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: $text-color;
+            padding: 4px;
+            border-radius: 3px;
+            transition: background-color 0.2s ease;
+
+            .icon {
+                width: 22px;
+                height: 22;
+                object-fit: contain;
+            }
+            
+            &:hover {
+                background: rgb(200, 200, 200);
+            }
+        }
+    }
+    .translate-btn {
+        height: 400px;
+        margin-top: auto;
+        display: flex;
+        .btn-chat {
+            display: flex;
+            align-items: center;
+            background: transparent;
+            column-gap: 18px;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-top: auto;
+            position: sticky;
+            bottom: 60px;
+            cursor: pointer;
+            .icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                background: #f6f6f6;
+                border-radius: 50%;
+                transition: background-color 0.3s ease;
+            }
+    
+            &:hover .icon {
+                background: #e6e6e6;
+            }
+    
+        }
+    }
+ }
+
+@include tablet-device {
+    .btn-chat {
+        position: fixed;
+        bottom: 40px ;
+        right: 40px;
+    }
+}
