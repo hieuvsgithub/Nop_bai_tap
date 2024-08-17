@@ -72,10 +72,11 @@ a {
           position: relative;
 
           .sidebar {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             bottom: 0;
+            z-index: 2;
             background: #fff;
             width: 35%;
             transform: translateX(-100%);
