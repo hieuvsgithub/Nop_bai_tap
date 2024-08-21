@@ -1,0 +1,25 @@
+@mixin mobile-device {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+@mixin tablet-device {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+}
+@mixin miniPc-device {
+      @media screen and (min-width: 992px) {
+        @content;
+      }
+}
+@mixin pc-device {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+}
+@mixin large-computer {
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
+}

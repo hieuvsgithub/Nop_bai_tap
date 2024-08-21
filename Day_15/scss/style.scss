@@ -1,0 +1,25 @@
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/grid";
+@import "partials/mixin";
+@import "partials/header";
+@import "partials/main";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $fontFamily;
+    font-style: normal;
+}
+
+input, button, textarea, select {
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
