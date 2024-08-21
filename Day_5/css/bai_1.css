@@ -1,7 +1,10 @@
 body {
-    height: 100vh;
+    width: 100%;
+    height: auto;
     background-color: antiquewhite;
     background-image: url(https://i.ytimg.com/vi/x0fSBAgBrOQ/maxresdefault.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 article {
@@ -10,12 +13,12 @@ article {
     border: 1px solid black;
     border-radius: 1%;
     position:absolute;
-    top:50%;
-    left:55%;
-    transform: translate(-40%, -50%);
+    top:200px;
+    left:520px;
     background-color: rgba(240, 248, 255, 0.524);
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.256)  ;
 }
-h3,
+h2,
 p {
     text-align: center;
 }
