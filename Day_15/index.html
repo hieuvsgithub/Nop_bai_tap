@@ -9,402 +9,359 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="wrapper-header">
-          <a class="logo" href="#">
-            <img src="img/logo-black.png" alt="ảnh logo" />
-          </a>
-
-          <input type="checkbox" id="btn-navbar" hidden />
-          <label for="btn-navbar" class="btn-navbar">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-
-          <nav class="nav">
-            <ul>
-              <li class="nav-item"><a href="#"> Home </a></li>
-              <li class="nav-item"><a href="#about"> About </a></li>
-              <li class="nav-item"><a href="#features">Features</a></li>
-              <li class="nav-item"><a href="#team">Team</a></li>
-              <li class="nav-item"><a href="#testimonials">Testimonials</a></li>
-              <li class="nav-item"><a href="#faq">Faq</a></li>
-              <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+        <div class="row">
+          <div class="col-3">
+            <div class="logo">
+              <img src="img/logo-black.png" alt="ảnh logo" />
+            </div>
+          </div>
+          <!-- end col-3 -->
+          <div class="col-9">
+            <div class="nav-page">
+              <input type="checkbox" id="btn-navbar" hidden />
+              <nav class="nav">
+                <ul>
+                  <li><a href="#home" class="active">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li><a href="#testimonials">Testimonials</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+              <label for="btn-navbar" class="btn-navbar">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+            </div>
+            <!-- end nav-page -->
+          </div>
+          <!-- end col-9 -->
         </div>
+        <!-- end row -->
       </div>
+      <!-- end container -->
     </header>
     <!-- end header -->
-
-    <main class="main">
-      <section class="banner" id="banner">
-        <div class="banner-overlay">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-sm-12">
-                <div class="banner-test">
-                  <h2>Best App Website Template</h2>
-                  <h6>
-                    This awesome template designed by
-                    <a href="https://w3template.com/">W3 Template.</a>
-                  </h6>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima, dolor. Dicta nihil nemo ea est, culpa labore odio
-                    quod impedit rerum, sapiente minus ipsa facilis veniam ab.
-                    Aspernatur, sed rerum?
-                  </p>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <img src="img/appstore.png" alt="ảnh appstore" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="img/playstore.png" alt="ảnh palystore" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <img src="img/iphone-screen.png" alt="" />
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-12">
+            <div class="hero-content">
+              <h2>Best App Website Template</h2>
+              <h6>
+                This awesome template designed by <a href="#">W3 template</a>
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur hendrerit neque massa, sit amet tristique ante porta
+                ut. In sodales et justo vel vulputate. Pellentesque habitant
+                morbi tristique senectus et netus et malesuada fames ac turpis
+                egestas.
+              </p>
+              <div class="external-links">
+                <a href="#">
+                  <img src="img/appstore.png" alt="ảnh link appstore" />
+                </a>
+                <a href="#">
+                  <img src="img/playstore.png" alt="ảnh link google play" />
+                </a>
               </div>
             </div>
+            <!-- end hero-content -->
           </div>
+          <!-- end col-6 -->
+          <div class="col-6 col-md-12">
+            <div class="img-phone">
+              <img src="img/iphone-screen.png" alt="ảnh điện thoại" />
+            </div>
+          </div>
+          <!-- end col-6 -->
         </div>
+        <!-- end row -->
         <div class="svg-wave">
-          <img src="img/applight-wave.svg" alt="ảnh nàn sóng" />
+          <img src="img/applight-wave.svg" alt="ảnh sóng" />
         </div>
-      </section>
-      <!-- end banner -->
-      <section class="about" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="about-header">
-                <h3>About</h3>
-                <span class="line"></span>
-                <p>
-                  Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
-                  viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
-                  pharetra ante.
-                </p>
-              </div>
-              <div class="about-content">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="item">
-                      <i class="fa fa-life-ring"></i>
-                      <h5>Support</h5>
-                      <p>
-                        Phasellus lobortis justo a magna facilisis, in commodo
-                        tellus rutrum. Sed vitae condimentum nulla.
-                      </p>
-                    </div>
-                  </div>
-                  <!-- end col-md-4 -->
-                  <div class="col-md-4">
-                    <div class="item">
-                      <i class="fa fa-life-ring"></i>
-                      <h5>Cross Platform</h5>
-                      <p>
-                        Phasellus lobortis justo a magna facilisis, in commodo
-                        tellus rutrum. Sed vitae condimentum nulla.
-                      </p>
-                    </div>
-                  </div>
-                  <!-- end col-md-4 -->
-                  <div class="col-md-4">
-                    <div class="item">
-                      <i class="fa fa-life-ring"></i>
-                      <h5>Fast</h5>
-                      <p>
-                        Phasellus lobortis justo a magna facilisis, in commodo
-                        tellus rutrum. Sed vitae condimentum nulla.
-                      </p>
-                    </div>
-                  </div>
-                  <!-- end col-md-4 -->
-                </div>
-                <a href="#" class="btn-about"> Learn More</a>
-              </div>
+      </div>
+    </section>
+    <!-- end hero -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-about">
+              <h3>About</h3>
+              <span class="line"></span>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
             </div>
+            <!-- end header-about -->
           </div>
-        </div>
-      </section>
-      <!-- end about -->
-      <section class="features" id="features">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="features-header">
-                <h3>Features</h3>
-                <span class="line"></span>
-                <p>
-                  Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
-                  viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
-                  pharetra ante.
-                </p>
-              </div>
-              <div class="features-content">
-                <div class="row">
-                  <div class="col-md-4 col-sm-12 content-right">
-                    <div class="item">
-                      <div class="item-content">
-                        <h5>Fast Processing</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididugnt ut labore
-                        </p>
-                      </div>
-                      <!-- end item content -->
-                      <div class="item-icon">
-                        <span class="fa fa-bolt"></span>
-                      </div>
-                      <!-- end item icon -->
-                    </div>
-                    <!-- end item -->
-                    <div class="item">
-                      <div class="item-content">
-                        <h5>Low Power Consuming</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididugnt ut labore
-                        </p>
-                      </div>
-                      <!-- end item content -->
-                      <div class="item-icon">
-                        <span class="fa fa-battery-full"></span>
-                      </div>
-                      <!-- end item icon -->
-                    </div>
-                    <!-- end item -->
-                    <div class="item">
-                      <div class="item-content">
-                        <h5>Wifi Compatibility</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididugnt ut labore
-                        </p>
-                      </div>
-                      <!-- end item content -->
-                      <div class="item-icon">
-                        <span class="fa fa-wifi"></span>
-                      </div>
-                      <!-- end item icon -->
-                    </div>
-                    <!-- end item -->
-                  </div>
-                  <div class="col-md-4">
-                    <div class="feature-mobile">
-                      <img src="img/iphone-screen.png" alt="ảnh điện thoại" />
-                    </div>
-                  </div>
-                  <div class="col-md-4 col-sm-12 content-left">
-                    <div class="item">
-                      <div class="item-icon">
-                        <span class="fa fa-check-double"></span>
-                      </div>
-                      <!-- end item icon -->
-                      <div class="item-content">
-                        <h5>Fast Processing</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididugnt ut labore
-                        </p>
-                      </div>
-                      <!-- end item content -->
-                    </div>
-                    <!-- end item -->
-                    <div class="item">
-                      <div class="item-icon">
-                        <span class="fa fa-dollar-sign"></span>
-                      </div>
-                      <!-- end item icon -->
-                      <div class="item-content">
-                        <h5>Low Power Consuming</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididugnt ut labore
-                        </p>
-                      </div>
-                      <!-- end item content -->
-                    </div>
-                    <!-- end item -->
-                    <div class="item">
-                      <div class="item-icon">
-                        <span class="fa fa-hdd"></span>
-                      </div>
-                      <!-- end item icon -->
-                      <div class="item-content">
-                        <h5>Wifi Compatibility</h5>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit, sed do eiusmod tempor incididugnt ut labore
-                        </p>
-                      </div>
-                      <!-- end item content -->
-                    </div>
-                    <!-- end item -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end Features -->
-      <section class="team" id="team">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="team-header">
-                <h3>Out team</h3>
-                <span class="line"></span>
-                <p>
-                  Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
-                  viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
-                  pharetra ante.
-                </p>
-              </div>
-              <!-- end team-header -->
-              <div class="team-content">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="item">
-                      <img src="img/user1.jpg" alt="" />
-                      <h4>Nitu Singh</h4>
-                      <p>Marketing Specialist</p>
-                    </div>
-                    <!-- end item -->
-                  </div>
-                  <!-- end col-md-4 -->
-                  <div class="col-md-4">
-                    <div class="item">
-                      <img src="img/user2.jpg" alt="" />
-                      <h4>Yogesh Singh</h4>
-                      <p>CEO & Founder</p>
-                    </div>
-                    <!-- end item -->
-                  </div>
-                  <!-- end col-md-4 -->
-                  <div class="col-md-4">
-                    <div class="item">
-                      <img src="img/user3.jpg" alt="" />
-                      <h4>Nisha Sharma</h4>
-                      <p>Web Developer</p>
-                    </div>
-                    <!-- end item -->
-                  </div>
-                  <!-- end col-md-4 -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end Team -->
-      <section class="testimonials" id="testimonials">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="testimonials-header">
-                <h3>Features</h3>
-                <span class="line"></span>
-                <p>
-                  Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
-                  viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
-                  pharetra ante.
-                </p>
-              </div>
-              <div class="testimonials-content">
-                <div class="item">
-                  <img src="img/user3.jpg" alt="ảnh user 3" />
-                  <div class="text">
-                    <samp class="user-name-job">
-                      Gordon Shaw <span class="job">Bloger</span>
-                    </samp>
-
+          <!-- end col-12 -->
+          <div class="col-12">
+            <div class="about-item">
+              <div class="row">
+                <div class="col-4 col-md-12">
+                  <div class="item">
+                    <i class="fa-solid fa-life-ring"></i>
+                    <h5>Support</h5>
                     <p>
-                      Consectetuer adipiscing elit, sed diam nonummy nibh
-                      euismod tincidunt ut laoreet dolore magna aliquam eratvo
-                      lutpat. Ut wisi enim ad minim veniam, quis nostrud v
+                      Phasellus lobortis justo a magna facilisis, in commodo
+                      tellus rutrum. Sed vitae condimentum nulla.
                     </p>
                   </div>
+                  <!-- end item -->
                 </div>
+                <!-- end col-4 -->
+                <div class="col-4 col-md-12">
+                  <div class="item">
+                    <i class="fa-solid fa-mobile"></i>
+                    <h5>Cross Platform</h5>
+                    <p>
+                      Phasellus lobortis justo a magna facilisis, in commodo
+                      tellus rutrum. Sed vitae condimentum nulla.
+                    </p>
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- end col-4 -->
+                <div class="col-4 col-md-12">
+                  <div class="item">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                    <h5>Fast</h5>
+                    <p>
+                      Phasellus lobortis justo a magna facilisis, in commodo
+                      tellus rutrum. Sed vitae condimentum nulla.
+                    </p>
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- end col-4 -->
               </div>
+              <!-- end row -->
             </div>
+            <!-- end about-item -->
+          </div>
+          <!-- end col-12 -->
+          <div class="col-12">
+            <div class="btn-learn-more">Learn more</div>
           </div>
         </div>
-      </section>
-      <!-- end Testimonials -->
-      <section class="contact" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="contact-header">
-                <h3>Contact us</h3>
-                <span class="line"></span>
-                <p>
-                  Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
-                  viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
-                  pharetra ante.
-                </p>
-              </div>
-              <div class="contact-content">
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 col-lg-8">
-                    <form action="" class="contact-form">
-                      <div class="row">
-                        <div class="col">
-                          <input type="text" placeholder="Full Name" />
-                        </div>
-                        <div class="col">
-                          <input type="email" placeholder="Email" />
-                        </div>
-                        <input type="text" placeholder="Subject" />
-                        <textarea name="" id="" placeholder="Message">
-                        </textarea>
-                        <button type="submit">SUBMIT</button>
-                      </div>
-                    </form>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end about -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-features">
+              <h3>Features</h3>
+              <span class="line"></span>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- end header-features -->
+          </div>
+          <!-- end col-12 -->
+          <div class="col-12">
+            <div class="features-item">
+              <div class="row">
+                <div class="col-4 left col-md-12">
+                  <div class="item">
+                    <div class="content-item">
+                      <h5>Fast Processing</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididugnt ut labore
+                      </p>
+                    </div>
+                    <!-- end content-item -->
+                    <i class="fa fa-bolt"></i>
                   </div>
-                  <div class="col-sm-12 col-md-12 col-lg-4">
-                    <div class="contact-info">
-                      <div class="contac-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div class="text-info">
-                          <p>Address</p>
-                          <p>New Delhi, India</p>
-                        </div>
+                  <!-- end item -->
+                  <div class="item">
+                    <div class="content-item">
+                      <h5>Low Power Consuming</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididugnt ut labore
+                      </p>
+                    </div>
+                    <!-- end content-item -->
+                    <i class="fa fa-battery-full"></i>
+                  </div>
+                  <!-- end item -->
+                  <div class="item">
+                    <div class="content-item">
+                      <h5>Wifi Compatibility</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididugnt ut labore
+                      </p>
+                    </div>
+                    <!-- end content-item -->
+                    <i class="fa fa-wifi"></i>
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- end col-4 -->
+                <div class="col-4 center">
+                  <img src="img/iphone-screen.png" alt="ảnh điện thoại" />
+                </div>
+                <div class="col-4 right col-md-12">
+                  <div class="item">
+                    <div class="content-item">
+                      <h5>Regular Updates</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididugnt ut labore
+                      </p>
+                    </div>
+                    <!-- end content-item -->
+                    <i class="fa fa-check-double"></i>
+                  </div>
+                  <!-- end item -->
+                  <div class="item">
+                    <div class="content-item">
+                      <h5>Save Money</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididugnt ut labore
+                      </p>
+                    </div>
+                    <!-- end content-item -->
+                    <i class="fa fa-dollar-sign"></i>
+                  </div>
+                  <!-- end item -->
+                  <div class="item">
+                    <div class="content-item">
+                      <h5>Unlimited Storage</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididugnt ut labore
+                      </p>
+                    </div>
+                    <!-- end content-item -->
+                    <i class="fa fa-hdd"></i>
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- end col-4 -->
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- end features-item -->
+          </div>
+          <!-- end col-12 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end features -->
+    <section class="team" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-team">
+              <h3>Our Team</h3>
+              <span class="line"></span>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- end header-team -->
+          </div>
+          <!-- end col-12 -->
+          <div class="col-12">
+            <div class="team-item">
+              <div class="row">
+                <div class="col-4 col-md-12">
+                  <div class="item">
+                    <img src="img/user1.jpg" alt="ảnh user 1" />
+                    <h4>Nitu Singh</h4>
+                    <p>Marketing Specialist</p>
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- end col-4 -->
+                <div class="col-4 col-md-12">
+                  <div class="item">
+                    <img src="img/user2.jpg" alt="ảnh user 2" />
+                    <h4>Yogesh Singh</h4>
+                    <p>CEO & Founder</p>
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- end col-4 -->
+                <div class="col-4 col-md-12">
+                  <div class="item">
+                    <img src="img/user3.jpg" alt="ảnh user 3" />
+                    <h4>Nisha Sharma</h4>
+                    <p>Web Developer</p>
+                  </div>
+                  <!-- end item -->
+                </div>
+                <!-- end col-4 -->
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- end team-item -->
+          </div>
+          <!-- end col-12 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end team -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-testimonials">
+              <h3>Testimonials</h3>
+              <span class="line"></span>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- end header-testimonials -->
+          </div>
+          <!-- end col-12 -->
+          <div class="col-12">
+            <div class="testimonials-item">
+              <div class="row">
+                <div class="col-12">
+                  <div class="item">
+                    <img src="img/user1.jpg" alt="ảnh user 1" />
+                    <div class="information">
+                      <div class="title">
+                        <span>John Michal</span> Digital Designer
                       </div>
-                      <div class="contac-item">
-                        <i class="fa-solid fa-mobile-button"></i>
-                        <div class="text-info">
-                          <p>Phone</p>
-                          <p><a href="#0">009900990099</a></p>
-                        </div>
-                      </div>
-                      <div class="contac-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div class="text-info">
-                          <p>E-mail</p>
-                          <p><a href="#0">yogeshsingh.now@gmail.com</a></p>
-                        </div>
-                      </div>
-                      <div class="contac-item">
-                        <i class="fa-solid fa-clock"></i>
-                        <div class="text-info">
-                          <p>Working Hours</p>
-                          <p>Mon-Fri 9.00 AM to 5.00PM.</p>
-                        </div>
-                      </div>
+                      <p>
+                        Consectetuer adipiscing elit, sed diam nonummy nibh
+                        euismod tincidunt ut laoreet dolore magna aliquam eratvo
+                        lutpat.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -412,61 +369,154 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- end Contact -->
-      <section class="download">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="header-download">
-                <h3>Download Our App</h3>
-                <span class="line"></span>
-                <p>
-                  Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
-                  viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
-                  pharetra ante.
-                </p>
-              </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end testimonials -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-contact">
+              <h3>Contact us</h3>
+              <span class="line"></span>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
             </div>
-            <div class="col-md-12">
-              <div class="content-download">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <img src="./img/appstore.png" alt="" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="./img/playstore.png" alt="" />
-                    </a>
-                  </li>
-                </ul>
+            <!-- end header-contact -->
+          </div>
+          <!-- end col-12 -->
+          <div class="col-12">
+            <div class="form-contact">
+              <div class="row">
+                <div class="col-7 col-lg-12">
+                  <form action="get" class="form">
+                    <div class="row">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Full name"
+                      />
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <!-- end row -->
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Subject"
+                    />
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Message"
+                    ></textarea>
+                    <button title="submit" name="button">Submit</button>
+                  </form>
+                </div>
+                <!-- end col-7 -->
+                <div class="col-5 col-lg-12">
+                  <div class="item-contact">
+                    <div class="item">
+                      <i class="fa fa-map-marker-alt"></i>
+                      <div class="text">
+                        <p>Address</p>
+                        <p>New Delhi, India</p>
+                      </div>
+                      <!-- end text -->
+                    </div>
+                    <!-- end item -->
+                    <div class="item">
+                      <i class="fa fa-mobile"></i>
+                      <div class="text">
+                        <p>Phone</p>
+                        <p>009900990099</p>
+                      </div>
+                      <!-- end text -->
+                    </div>
+                    <!-- end item -->
+                    <div class="item">
+                      <i class="fa fa-envelope"></i>
+                      <div class="text">
+                        <p>E-mail</p>
+                        <a href="#"><p>yogeshsingh.now@gmail.com</p></a>
+                      </div>
+                      <!-- end text -->
+                    </div>
+                    <!-- end item -->
+                    <div class="item">
+                      <i class="fa fa-clock"></i>
+                      <div class="text">
+                        <p>Working Hours</p>
+                        <p>Mon-Fri 9.00 AM to 5.00PM.</p>
+                      </div>
+                      <!-- end text -->
+                    </div>
+                    <!-- end item -->
+                  </div>
+                  <!-- end item-contact -->
+                </div>
+                <!-- end col-5 -->
               </div>
+              <!-- end row -->
+            </div>
+            <!-- end form-contact -->
+          </div>
+          <!-- end col-12 -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end contact -->
+    <section class="download">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="header-download">
+              <h3>Download Our App</h3>
+              <span class="line"></span>
+              <p>
+                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                pharetra ante.
+              </p>
+            </div>
+            <!-- end header-download -->
+          </div>
+          <!-- end col-12 -->
+          <div class="col-12">
+            <div class="links">
+              <img src="img/appstore.png" alt="ảnh link appstore" />
+              <img src="img/playstore.png" alt="ảnh link playstore" />
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <!-- end main -->
-
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- end download -->
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-12">
             <p>
-              2018 © Applight. Website Designed by
-              <a href="#">W3 Template</a>
+              2018 © Applight. Website Designed by <a href="#">W3 Template</a>
             </p>
           </div>
         </div>
       </div>
     </footer>
-    <!-- end footer -->
   </body>
 </html>
-
-<!-- các thẻ header main footer lúc này được coi như các section 
-bên trong các thẻ đó sẽ có các container 
-ở các thẻ container sẽ gán giá trị cho nó ban đầu là  
--->

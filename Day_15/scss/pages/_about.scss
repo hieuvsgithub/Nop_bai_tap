@@ -1,0 +1,122 @@
+@use "../partials/mixin"; 
+
+.about {
+    padding: 80px 0;
+    .container {
+        .row {
+            .col-12 {
+                display: flex;
+                justify-content: center;
+                .header-about {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    width: 70%;
+                    h3 {
+                        font-size: 2.8rem;
+                        font-weight: 700;
+                    }
+                    .line {
+                        height: 2px;
+                        width: 50px;
+                        background: #8e1efc;
+                        display: block;
+                        margin: 20px auto 20px;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            width: 150px;
+                            height: 2px;
+                            border-bottom: 2px dashed #8e1efc;
+                            margin-left: -75px;
+                        }
+                    }
+                    p {
+                        font-size: 1.7rem;
+                        color: #818992;
+                        margin: 0 0 16px;
+                    }
+                }
+                .about-item {
+                    .row {
+                        .col-4 {
+                            .item {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                i {
+                                    padding: 40px;
+                                    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+                                    font-size: 5rem;
+                                    color: #fff;
+                                    border-radius: 50%;
+                                    &.fa-mobile {
+                                        padding: 40px 47px;
+                                    }
+                                    &.fa-bolt-lightning {
+                                        padding: 40px 47px;
+                                    }
+                                }
+                                h5 {
+                                    font-size: 2rem;
+                                    font-weight: 600;
+                                    margin: 30px 0 8px;
+                                }
+                                p {
+                                    width: 80%;
+                                    color: #818992;
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-learn-more {
+                    font-size: 1.6rem;
+                    color: #8e1efc;
+                    padding: 10px 40px;
+                    border: 2px solid #8e1efc;
+                    border-radius: 7px;
+                    margin-top: 30px;
+                    &:hover {
+                        background-color: #8e1efc;
+                        color: #fff;
+                    }
+                    &:active {
+                        background-color: #8e1efc;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.tablet-device {
+    .about {
+        .container {
+            .row {
+                .col-12 {
+                    .about-item {
+                        .row {
+                            .col-md-12 {
+                                .item {
+                                    p {
+                                        width: 55%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

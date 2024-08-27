@@ -1,0 +1,102 @@
+@use "../partials/mixin";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: #fff;
+    .container {
+        .row {
+            margin: 20px 0;
+            .col-3 {
+                margin: 0;
+                .logo {
+                    img {
+                        width: 160px;
+                    }
+                }
+            }
+            .col-9 {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin: 0;
+                .nav-page {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 50px;
+                    .nav {
+                        ul {
+                            display: flex;
+                            gap: 20px;
+                            li {
+                                a {
+                                    color: #333333;
+                                    font-size: 1.3rem;
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                    padding: 8px;
+                                    &:hover {
+                                        color: #5f0099;
+                                    }
+                                    &.active {
+                                        color: #5f0099;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .btn-navbar {
+                        display: none;
+                        i {
+                            font-size: 1.8rem;
+                            color: #5f0099;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.miniPc-device {
+    .header {
+        .container {
+            .row {
+                .col-9 {
+                    .nav-page {
+                        .nav {
+                            margin: 30px auto;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            right: 0;
+                            display: flex;
+                            justify-content: center;
+                            background: #fff;
+                            transform: scaleY(0);
+                            transform-origin: 0 0;
+                            transition: transform 0.2s ease;
+                            ul {
+                                flex-direction: column;
+                                justify-content: center;
+                                text-align: center;
+                                gap: 40px;
+                            }
+                        }
+                        .btn-navbar {
+                            display: block;
+                            margin-right: 20px;
+                        }
+                        #btn-navbar:checked ~ .nav {
+                            transform: scaleY(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

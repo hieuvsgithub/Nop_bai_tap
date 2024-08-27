@@ -1,16 +1,25 @@
-@import "partials/reset";
-@import "partials/variables";
-@import "partials/grid";
-@import "partials/mixin";
-@import "partials/header";
-@import "partials/main";
+@use "partials/reset";
+@use "partials/variables";
+@use "partials/mixin";
+
+@use "./components/header";
+@use "./components/footer";
+
+@use "./pages/hero";
+@use "./pages/about";
+@use "./pages/features";
+@use "./pages/team";
+@use "./pages/testimonials";
+@use "./pages/contact";
+@use "./pages/download";
 
 html {
     font-size: 62.5%;
 }
 
 body {
-    font-family: $fontFamily;
+    font-size: 1.6rem;
+    font-family: variables.$fontFamily;
     font-style: normal;
 }
 

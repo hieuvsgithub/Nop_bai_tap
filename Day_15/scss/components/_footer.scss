@@ -1,12 +1,15 @@
+@use "../partials/mixin";
+
 .footer {
     .container {
         .row {
-            .col-md-12 {
+            .col-12 {
                 p {
                     text-align: center;
-                    font-size: 1.4rem;
+                    padding: 20px;
+                    font-size: 1.3rem;
                     a {
-                        color: #8e1efc;
+                        color: #5f0099;
                     }
                 }
             }

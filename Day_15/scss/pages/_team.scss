@@ -1,0 +1,141 @@
+@use "../partials/mixin";
+
+.team {
+    padding: 80px 0;
+    .container {
+        .row {
+            .col-12 {
+                display: flex;
+                justify-content: center;
+                .header-team {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    width: 70%;
+                    h3 {
+                        font-size: 2.8rem;
+                        font-weight: 700;
+                    }
+                    .line {
+                        height: 2px;
+                        width: 50px;
+                        background: #8e1efc;
+                        display: block;
+                        margin: 20px auto 20px;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            width: 150px;
+                            height: 2px;
+                            border-bottom: 2px dashed #8e1efc;
+                            margin-left: -75px;
+                        }
+                    }
+                    p {
+                        font-size: 1.7rem;
+                        color: #818992;
+                        margin: 0 0 16px;
+                    }
+                }
+                .team-item {
+                    width: 100%;
+                    .row {
+                        .col-4 {
+                           .item {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 250px;
+                                border-radius: 50%;
+                            }
+                            h4 {
+                                color: rgb(142, 30, 252);
+                                margin-top: 20px;
+                                font-size: 17px;
+                                font-weight: 600;
+                            }
+                            p {
+                                font-size: 1.4rem;
+                                margin: 8px 0 16px;
+                            }
+                           }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.pc-device {
+    .team {
+        .container {
+            .row {
+                .col-12 {
+                    .team-item {
+                        .row {
+                            .col-4 {
+                                .item {
+                                    img {
+                                        width: 203px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.miniPc-device {
+    .team {
+        .container {
+            .row {
+                .col-12 {
+                    .team-item {
+                        .row {
+                            .col-4 {
+                                .item {
+                                    img {
+                                        width: 147px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mixin.tablet-device {
+    .team {
+        .container {
+            .row {
+                .col-12 {
+                    .team-item {
+                        .row {
+                            .col-4 {
+                                .item {
+                                    img {
+                                        width: 255px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
