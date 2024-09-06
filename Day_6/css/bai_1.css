@@ -1,0 +1,195 @@
+@font-face {
+    font-family: "lato";
+    src:url("../font/Lato-Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-feedback {
+    width: 700px;
+    margin: 50px auto;
+    border: 1px solid #000;
+    padding: 40px;
+}
+h2 {
+    font-family: Lobster;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+p {
+    font-family: lato;
+    color: #00000098;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+b {
+    color: red;
+}
+.form {
+    font-family: lato;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input {
+    font-family: lato;
+}
+.message {
+    width: 100%;
+    height: 200px;
+    font-size: 1.1rem;
+    font-family: lato;
+    outline: none;
+    resize: none; /* ko cho kéo dãn*/
+    border-left: none;
+    
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.d-f-start {
+    display: flex;
+    align-items: flex-start;
+}
+.icon i  {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+}
+input {
+    height: 50px;
+    /* display: inline-block; */
+    outline: none;
+    border: 1px solid #000000a3;
+    border-left: none;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    
+}
+select {
+    font-family: lato;
+    height: 50px;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #000000a3;
+    border-left: none;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    color: #00000099;
+}
+.input-check {
+    height: auto;
+    width: auto;
+}
+span i {
+    font-size: 0.5rem;
+    position: absolute;
+    top: 21px;
+    right: 10px;
+    color: #000;
+    opacity: 0.4;
+}
+.icon-mes {
+    height: 200px;
+}
+.icon-mes i {
+    height: 100%;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+button {
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(248, 35, 35);
+    color: #fff;
+    font-family: lato;
+    font-size: 1.18rem;
+    font-weight: 900;
+}
+.send-copy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.send-copy::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    opacity: 0.4;
+}
+.send-copy::after {
+    content: "";
+    width: 10px;
+    height: 5px;
+    border-left: 3px solid #000;
+    border-bottom: 3px solid #000;
+    transform:  rotate(-45deg);
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: none;
+}
+.input-check:checked ~ .send-copy::after {
+    display: block;
+}
+
+.remind {
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+    position: absolute;
+    top: -55px;
+    left: 30px;
+    display: none;
+}
+.remind::after {
+    content: "";
+    border:  solid ;
+    border-width: 10px 15px 10px 15px;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+}
+#phone:focus ~ .remind,
+#email:focus ~ .remind,
+.name:focus ~ .remind { 
+    display: block;
+}
+#phone:focus ,
+#email:focus,
+.name:focus  { 
+    border: 1.5px solid #000;
+    border-left: none;
+}
