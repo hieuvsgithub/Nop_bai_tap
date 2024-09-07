@@ -4,73 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="Css/bai_2.css" />
+    <link rel="stylesheet" href="./Css/bai_2.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
   <body>
-    <form action="">
-      <!-- ///// bên trái ///////// -->
-      <div class="left">
-        <div class="logo-trademark">
-          <div class="logo">JL</div>
-          <div class="trademark">Just Log</div>
+    <div class="wrapper">
+      <div class="form-login">
+        <div class="left">
+          <h2><span class="logo">JL</span> Just Log</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Necessitatibus, eum quidem tempora excepturi laborum dicta.
+          </p>
+          <div class="btn-read-more">Read More</div>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
-          autem aperiam explicabo qui, quidem ipsa.
-        </p>
-        <a class="read-more" href="">Read More</a>
-        <nav>
-          <ul>
-            <li>
-              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="float">
-        <i id="arrow-right" class="fa-solid fa-arrow-right-long"></i>
-      </div>
-      <!--//////////// bên phải ///////////////-->
-      <div class="right">
-        <div>
-          <h3>Login to <span>your account</span></h3>
-          <input
-            type="text"
-            name="Email"
-            class="email"
-            placeholder="Email Address"
-          />
-          <input
-            type="text"
-            name="password"
-            class="passwword"
-            placeholder="Password"
-          />
-          <div class="support">
-            <label class="remember" for="">
-              <input type="checkbox" /> Remember me
-            </label>
-            <a class="forgot" href="">Forgot Passwword</a>
-          </div>
-          <button>LOGIN</button>
-          <div class="register">
-            Don't have an account? <a href=""> Register here </a>
-          </div>
+        <!-- end left -->
+        <div class="right">
+          <h3>Login to <span class="txt">your account</span></h3>
+          <form action="" class="form">
+            <input
+              type="email"
+              name="email"
+              class="email"
+              placeholder="Email Address"
+            />
+            <input
+              type="password"
+              name="password"
+              class="password"
+              placeholder="Password"
+            />
+            <div class="input">
+              <label class="remember">
+                <input type="checkbox" />
+                Remember me
+              </label>
+              <span class="forgot"> Forgot Password</span>
+            </div>
+            <div class="btn-login">LOGIN</div>
+            <span class="remind">
+              Don't have an account?
+              <a href="#" class="register-here">Register here</a>
+            </span>
+          </form>
         </div>
+        <div class="center"><i class="fa-solid fa-right-long"></i></div>
+        <!-- end right -->
       </div>
-    </form>
+      <!-- end form-login -->
+    </div>
+    <!-- end wrapper -->
   </body>
 </html>

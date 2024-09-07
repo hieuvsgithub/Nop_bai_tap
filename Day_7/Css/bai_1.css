@@ -1,77 +1,87 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background: white;
-    margin: 40px 60px ;
-    border: 1px solid #ece6e6;
+.header {
+    margin: 20px auto;
+    font-family: "Open Sans";   
 }
 
-.list {
-    width: 100%;  
-
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #00000080;
 }
 
 ul {
-    font-size: 0;
+    display: flex;
+    list-style: none;
 }
-
-li[class^="item"] {
-    display: inline-block;
-    padding: 3px;
-    border: 1px solid #ece6e6;
-    font-size: 1rem;
+li {
+    background-color: #fff;
+    padding: 5px;
+    border-right: 0.8px solid #00000080;
     position: relative;
 }
-
-a {
-    text-decoration: none;
-    padding: 10px;
+li a  {
     display: inline-block;
-    color: #666;
-    font: "Open Sans", sans-serif;
-}
-
-li.item-contacts {
-    float: right;
-}
-
-a:hover {
-    background: #2da5da;
-    color: white;
-}
-i[class$="down"] {
-    font-size: 0.5rem;
-}
-
-li[class^="item"] ul {
-    position: absolute;
-    margin-top: 10px;
-    width: 150px;
-    font-size: 1rem;
-    border: 1px solid #ece6e6;
-    border-radius: 5px;
-    display: none;
-    box-shadow: 0px 0px 5px 1px #666;
-}
-
-li[class^="item"] ul li {
-    list-style-position: inside;    
-    list-style-type: "✓ ";
     padding: 10px;
-    font: "Open Sans", sans-serif;
-    border-bottom: 1px solid #ece6e6;
- 
+    color: #666;
+    text-decoration: none;
+}
+.fa-chevron-down {
+    font-size: 0.6rem;
 }
 
-li[class^="item"] ul li:last-of-type {
-    border-bottom: none;
+.contacts {
+    border-left: 0.8px solid #00000080;
+    padding: 15px;
+    color: #666;
+    text-decoration: none;
+    display: inline-block;
+}
+.contacts:hover {
+    background-color: #2da5da;
+    color: #fff;
+}
+.nav-small {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #666666;
+    box-shadow: 0px 0px 4px 1px #6b6b6b;
+    min-width: 180px;
+    
+    display: none;
 }
 
-a:hover ~ ul {
+.nav-small::before {
+    content: "";
+    border: 5px solid;
+    border-color:  transparent transparent #fff transparent;
+    border-top-width: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 8px;
+}
+
+.nav-small a {
     display: block;
+    background-color: #fff;
 }
-
-
+li:hover .nav-small {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8px;
+}
+li:hover > a{
+    background-color: #2da5da;
+    color: #fff;
+}
