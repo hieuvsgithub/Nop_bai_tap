@@ -1,53 +1,32 @@
-/**
- * * đầu vào là nhập số km bạn đi
- * * đầu ra là tổng số tiền thanh toán cho số km bạn đi
- */
+const distance = +prompt("Nhập số km:");
+let pricePerKm,
+  discount = 10,
+  total;
+if (typeof distance === "number" && !Number.isNaN(distance) && distance > 0) {
+  if (distance <= 1) {
+    pricePerKm = 15000;
+    total = distance * pricePerKm;
+    alert(
+      `Với quãng đường ${distance} (km) \n Số tiền bạn phải trả là ${total}`
+    );
+  } else if (distance <= 5) {
+    pricePerKm = 13500;
+    total = 15000 + (distance - 1) * pricePerKm;
+    alert(
+      `Với quãng đường ${distance} (km) \n Số tiền bạn phải trả là ${total}`
+    );
+  } else if (distance) {
+    pricePerKm = 11000;
+    total = 15000 + 13500 * 4 + (distance - 5) * pricePerKm;
 
-//--------------------- cách 1: hàm có tên ---------------------------------
-// đầu vào
-// const distance = prompt("nhập vào quãng đường bạn muốn đi (km) :");
-// hàm tính tiền thanh toán taxi
-// function expense(number) {
-//   let total;
-//   if (number <= 1 && number > 0) {
-//     alert(`Tổng tiền của bạn hết: 15.000 đ`);
-//   } else if (number > 1 && number <= 5) {
-//     total = number * 13500;
-//     alert(`Tổng tiền của bạn hết: ${total}`);
-//   } else if (number > 5 && number <= 120) {
-//     total = number * 11000;
-//     alert(`Tổng tiền của bạn hết: ${total}`);
-//   } else if (number > 120) {
-//     total = number * 11000 - (number * 11000) / 10;
-//     alert(`Tổng tiền của bạn hết: ${total}`);
-//   } else {
-//     alert("quãng đường bạn nhập vào không hợp lệ");
-//   }
-// }
-
-// expense(distance);
-
-//--------------------- cách 2: hàm nặc danh ---------------------------------
-const distance = prompt("nhập vào quãng đường bạn muốn đi (km) :");
-
-const expense = function (number) {
-  let total;
-  if (number <= 1 && number > 0) {
-    alert(`Tổng tiền của bạn hết: 15.000 đ`);
-  } else if (number > 1 && number <= 5) {
-    total = number * 13500;
-    alert(`Tổng tiền của bạn hết: ${total}`);
-  } else if (number > 5 && number <= 120) {
-    total = number * 11000;
-    alert(`Tổng tiền của bạn hết: ${total}`);
-  } else if (number > 120) {
-    total = number * 11000 - (number * 11000) / 10;
-    alert(`Tổng tiền của bạn hết: ${total}`);
-  } else {
-    alert("quãng đường bạn nhập vào không hợp lệ");
+    if (distance > 120) {
+      total = (total * (100 - discount)) / 100;
+    }
+    alert(
+      `Với quãng đường ${distance} (km) \n Số tiền bạn phải trả là ${total}`
+    );
   }
-  return number;
-};
-
-const taxi = expense(distance);
-console.log(`Quãng đường khách đi là: ${taxi}`);
+  console.log(`Số tiền ứng ${distance}km là ${total} vnd`);
+} else {
+  console.log(`Nhap lai khoang cach dạng số và > 0`);
+}

@@ -1,100 +1,94 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
-section {
-    max-width: 1000px; 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 1200px;
     margin: 30px auto;
-    padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px 15px;
-    position: relative;
+    gap: 20px;
 }
 .item {
-    width: 300px;
-    height: 225px;
-    padding: 0 25px;
-    border: 1px solid rgba(171, 166, 166, 0.782);
-    position: relative;
-}
-
-img {
-    max-height: 225px;
-    width: 300px;
-    position: relative;
-    
-}
-.item .icon {
-    font-size: 2rem;
-    color: rgb(209, 146, 50);
-    margin: 20px;
-}
-.item h2 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-}
-.item p {
-    color: rgb(71, 69, 65);
-    margin-bottom: 60px;
-
-}
-.item a i {
+    max-width: 380px;
+    min-height: 220px;
     padding: 10px;
-    border-radius: 50%;
-    color: white;
-    border: 1px solid rgb(195, 192, 185); 
-}
-.item a {
-    display: none;
-    text-decoration: none;
-}
-.item:hover a {
-    display: block;
-    color: white;
-    position: relative;
-    top: -60px;
-    transition: top;
-    transition-duration: 1s;
-
-}
-.item:hover .icon i {
-    /* display: none; */
-    transform: scale(0 , 0);
-    transition: transform;
-    transition-duration: 0.1s;
-}
-.item:hover p {
-    transition-property:  top;
-    transition-duration: 1s;
-    position: relative;
-    top: -40px;
-    color: #ffffff;
+    border: 1px solid #000;
+    flex-grow: 1;
     
-}
-.item:hover h2 {
-    transition-property:  top;
-    transition-duration: 1s;    
     position: relative;
-    top: -40px;
-    color: #ffffff;
 }
-.item:hover {
-    background-image: url("https://fastly.picsum.photos/id/909/300/300.jpg?hmac=JqWdYc9oZ6sjTpcXI2QMDosuvAFEwryTPshCz22TR_U");
-}   
-.item:hover .phu {
+.wrapper_box {
+    padding: 20px 10px; 
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.icon i {
+    font-size: 2rem;
+    color: rgb(255, 167, 34);
+    margin-bottom: 10px;
+    transition: transform 1s ease;
+}
+
+h3,
+p {
+    max-width: 90%;
+    transition: transform 1s ease;
+}
+p {
+    transition-delay: 0.1s;
+}
+
+a {
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.8s ease;
+    transition-delay: 0.1s;
+}
+.coating {
+    display: none;
     position: absolute;
     inset: 0;
-    background: rgba(221, 121, 96, 0.628);
-    z-index: 0;
+    background-color: rgb(190, 98, 52);
+    opacity: 0.4;
+    
 }
-.content {
-    position: absolute;
-    z-index: 999;
+
+.item:hover {
+    background: url("https://fastly.picsum.photos/id/908/300/200.jpg?hmac=LA1p9bVQc1HGV9GlGc98YnSM0L_VJe3AxOFUa0vF7JY");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
 }
-a i:hover {
-    color: black;
-    background: rgb(246, 243, 243);
+
+.item:hover .coating {
+    display: block;
+}
+
+.item:hover .wrapper_box .icon i {
+    transform: scale(0,0);
+}
+.item:hover .wrapper_box h3,
+.item:hover .wrapper_box p {
+    transform: translateY(-40px);
+}
+.item:hover .wrapper_box a {
+    color: #fff;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 }

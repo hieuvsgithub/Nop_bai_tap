@@ -20,18 +20,14 @@ function primeNumberTest(number) {
       }
     }
     alert(`Số ${number} là số nguyên tố`);
-  } else if (number < 2) {
-    alert(`Số ${number} không phải là số nguyên tố`);
   } else {
     alert("Không hợp lệ");
   }
   // return number;
 }
-// gọi hàm
-// const primeNumber = primeNumberTest(n);
-// if (n !== ``) {
-//   console.log(primeNumber);
-// } else {
-//   return;
-// }
-primeNumberTest(n);
+
+if (n < 2) {
+  alert(`${n} không phải số nguyên tố`);
+} else {
+  primeNumberTest(n);
+}

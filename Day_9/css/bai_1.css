@@ -102,11 +102,39 @@ p {
     display: block;
 }
 .right .box .img-above {
+    width: 200px;
+    height: 300px;
     position: absolute;
     top: 62px;
     left: 90px;
-    display: block;
+    background: url("https://fastly.picsum.photos/id/526/200/300.jpg?hmac=Xtm9XW9i9d69kjGxmnZYyvJRyY3VKqYwjw_Yq9Z1YBU");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.right .box .img-above img {
-    max-height: 270px;
+.img-above p {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: transparent;
+    background-clip: text;
+    background-image: url("https://fastly.picsum.photos/id/526/200/300.jpg?hmac=Xtm9XW9i9d69kjGxmnZYyvJRyY3VKqYwjw_Yq9Z1YBU");
+}
+.img-above p span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.bgr_color {
+    background-color: rgb(25, 109, 218);
+    width: 90%;
+    height: 90%;
 }

@@ -3,11 +3,105 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container {
-    width: 1000px;
-    margin: 40px auto;
+.section {
+    max-width: 1200px;
+    margin: 30px auto;
+    font-family: sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    gap: 30px;
+
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.input {
+    display: flex;
+    gap: 40px;
+    height: 40px;
+    position: relative;
+}
+input {
+    width: 550px;
+    outline: none;
+    flex-grow: 1;
+    font-size: 1rem;
+    padding: 10px;
+    /* background-color: transparent;
+    z-index: 1000; */
+    
+}
+select {
+    flex-grow: 1;
+    min-width: 580px;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 8px;
+}
+.first-name {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+.last-name {
+    position: absolute;
+    top: 10px;
+    left: 633px;
+}
+.email {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    
+}
+.message {
+    position: absolute;
+    top: 282px;
+    left: 43px;
+}
+#message {
+    resize: none;
+    outline: none;
+    font-size: 1.1rem;
+    height: 200px;
+    padding: 15px 10px;
+}
+
+.input-first-name:focus ~ .first-name,
+.input-first-name:valid  ~ .first-name,
+.input-last-name:focus ~ .last-name,
+.input-last-name:valid ~ .last-name,
+.input-email:focus ~ .email,
+.input-email:valid ~ .email {
+    transform: translateY(-10px);
+    font-size: 0.6rem;
+    /* z-index: 1000; */
+}
+
+#message:focus ~.message ,
+#message:valid ~.message {
+    transform: translateY(-6px);
+    font-size: 0.6rem;
+}
+.input-btn {
+    text-align: center;
+}
+.send {
+    display: inline-block;
+    padding: 20px;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgb(50, 50, 253);
+    border-radius: 99px;
+    border: none;
+    cursor: pointer;
 }

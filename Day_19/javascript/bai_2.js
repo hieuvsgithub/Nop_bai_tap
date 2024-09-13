@@ -14,19 +14,31 @@ function expense(number, callback) {
     total = number * 1.678;
     callback(total);
   } else if (number > 50 && number <= 100) {
-    total = number * 1.734;
+    number -= 50;
+    total = 50 * 1.678 + number * 1.734;
     callback(total);
   } else if (number > 100 && number <= 200) {
-    total = number * 2.014;
+    number -= 100;
+    total = 50 * 1.678 + 50 * 1.734 + number * 2.014;
     callback(total);
   } else if (number > 200 && number <= 300) {
-    total = number * 2.536;
+    number -= 200;
+    total = 50 * 1.678 + 50 * 1.734 + 100 * 2.014 + number * 2.536;
     callback(total);
   } else if (number > 300 && number <= 400) {
-    total = number * 2.834;
+    number -= 300;
+    total =
+      50 * 1.678 + 50 * 1.734 + 100 * 2.014 + 100 * 2.536 + number * 2.834;
     callback(total);
   } else if (number > 400) {
-    total = number * 2.927;
+    number -= 400;
+    total =
+      50 * 1.678 +
+      50 * 1.734 +
+      100 * 2.014 +
+      100 * 2.536 +
+      100 * 2.834 +
+      number * 2.927;
     callback(total);
   } else {
     total = number;
